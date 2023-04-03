@@ -1,0 +1,204 @@
+// View with photo gallery and video gallery nodes.
+.views-view-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 53px;
+  padding: 0 10px;
+}
+
+.view-photo-gallery-list, .view-video-gallery-list {
+  .gallery-col {
+    margin-bottom: 20px;
+  }
+
+  .views-field-field-media-image, .views-field-field-media-video {
+    position: relative;
+    width: 100%;
+    height: 14vw;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .field-content {
+    width: 100%;
+    height: 14vw;
+  }
+
+  .field-content img, .field-content iframe, .field-content video {
+    transition: all .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .views-field-title {
+    margin: 15px auto 20px;
+
+    a {
+      color: #1b419b;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    a:-webkit-any-link {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .views-field-field-date {
+    max-width: 150px;
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
+
+    &::before {
+      font-family: 'Font Awesome 5 Free', serif;
+      font-weight: 500;
+      content: '\f133';
+      display: inline;
+      margin-right: 5px;
+    }
+
+    .field-content {
+      display: inline;
+    }
+  }
+
+  .views-field-field-date, .views-field-totalcount, .views-field-comment-count {
+    font-size: 14px;
+    color: #b9b9b9;
+    display: inline-block;
+  }
+
+  .views-field-counter, .views-field-totalcount {
+    &::before {
+      font-family: 'Font Awesome 5 Free', serif;
+      content: '\f06e';
+      font-weight: 900;
+      margin-right: 5px;
+    }
+
+    margin: 0 40px 0 0;
+  }
+
+  .views-field-comment-count {
+    &::before {
+      font-family: 'Font Awesome 5 Free', serif;
+      font-weight: 900;
+      content: '\f075';
+      margin-right: 5px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .views-view-grid {
+    gap: 24px;
+    padding: 0;
+  }
+}
+
+.block-views-blockvideo-gallery-without-photo-block-1, .block-views-blocknews-without-photo-block-1, .block-views-blockphoto-gallery-without-photo-block-1 {
+  .views-row {
+    padding: 40px 0;
+    border-bottom: 0.1rem solid #f0f0f0;
+
+    &:first-child {
+      padding: 0 0 40px;
+    }
+
+    .views-field-title {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.35;
+      text-transform: none;
+
+      a {
+        color: $blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:first-letter {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .views-field-field-date {
+      display: inline-flex;
+      width: 142px;
+      font-size: 14px;
+      color: #b9b9b9;
+      margin: 16px 0;
+      align-items: center;
+    }
+
+    .views-field-totalcount {
+      font-size: 14px;
+      color: #b9b9b9;
+      margin-right: 0;
+      display: inline-block;
+      margin-left: 3%;
+
+      &::before {
+        font-family: 'Font Awesome 5 Free', serif;
+        content: '\f06e';
+        font-weight: 900;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .view-photo-gallery-list, .view-video-gallery-list {
+    .views-field-field-media-image, .views-field-field-media-video,
+    .field-content img, .field-content iframe, .field-content video {
+      height: 24vw;
+    }
+
+    .pagination {
+      margin-bottom: 0;
+    }
+  }
+  .views-view-grid {
+    gap: 32px;
+  }
+  .view-photo-gallery-list, .view-video-gallery-list {
+    .field-content img, .field-content iframe, .field-content video {
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .views-view-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .view-photo-gallery-list, .view-video-gallery-list {
+    .views-field-field-media-image, .views-field-field-media-video,
+    .field-content img, .field-content iframe, .field-content video {
+      height: 48vw;
+    }
+
+    .views-field-title {
+      margin-bottom: 10px;
+    }
+  }
+}

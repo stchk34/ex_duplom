@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"Image":"\u0417\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u043d\u044f","Edit":"Bearbeiten","Title":"\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a"}}};

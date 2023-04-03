@@ -1,0 +1,31 @@
+uuid: f0692409-b2b1-412a-b64f-0f48374193b0
+langcode: ro
+status: true
+dependencies:
+  module:
+    - dropdown_language
+    - language
+  theme:
+    - moldova
+id: dropdownlanguage
+theme: moldova
+region: header_top
+weight: -19
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  label_display: '0'
+  provider: dropdown_language
+  labels: null
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      ro: ro
+      uk: uk

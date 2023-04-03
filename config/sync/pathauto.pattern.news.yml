@@ -1,0 +1,22 @@
+uuid: fd159be2-86ea-4291-8606-a2a4d37942d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: news
+label: News
+type: 'canonical_entities:node'
+pattern: '/noutati/[node:title]'
+selection_criteria:
+  641dc35d-17ef-4444-9c03-b271dd09b01b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 641dc35d-17ef-4444-9c03-b271dd09b01b
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+weight: -5
+relationships: {  }

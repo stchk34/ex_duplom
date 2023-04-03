@@ -1,0 +1,8 @@
+uuid: ace60472-1ad3-47d6-b756-aa4d412f09fe
+langcode: en
+status: true
+dependencies: {  }
+id: sidebar
+label: Sidebar
+revision: 0
+description: ''

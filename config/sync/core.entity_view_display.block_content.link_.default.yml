@@ -1,0 +1,31 @@
+uuid: 8a6b8dbf-a0e4-4aae-b52c-ce83b5e17c17
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_
+    - field.field.block_content.link_.body
+    - field.field.block_content.link_.field_link_logout
+  module:
+    - link
+id: block_content.link_.default
+targetEntityType: block_content
+bundle: link_
+mode: default
+content:
+  field_link_logout:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  langcode: true
+  search_api_excerpt: true

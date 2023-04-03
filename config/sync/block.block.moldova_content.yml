@@ -1,0 +1,22 @@
+uuid: d2073e93-605f-4545-b5d7-dfe016bf3251
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - moldova
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: moldova_content
+theme: moldova
+region: content
+weight: -13
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

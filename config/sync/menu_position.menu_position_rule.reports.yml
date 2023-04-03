@@ -1,0 +1,21 @@
+uuid: 9647a71d-594d-45de-a1fd-0de8b5aab4e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: reports
+label: Reports
+menu_name: main
+parent: 'menu_link_content:574ccfb6-2291-4a90-949c-9ab0adec611a'
+menu_link: 'menu_position_link:reports'
+enabled: true
+weight: null
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      reports: reports

@@ -1,0 +1,48 @@
+description: 'Găsire şi administrare conţinut'
+display:
+  default:
+    display_title: Default
+    display_options:
+      fields:
+        type:
+          label: 'Tip conţinut'
+        name:
+          label: Autor
+        status:
+          settings:
+            format_custom_false: Nepublicat
+        changed:
+          label: Actualizat
+        operations:
+          label: Operaţii
+      pager:
+        options:
+          tags:
+            next: 'Următor ›'
+            previous: '‹ Anterior'
+            first: '« Primul'
+            last: 'Ultimul »'
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'Nu este conţinut disponibil.'
+      filters:
+        type:
+          expose:
+            label: 'Tip conţinut'
+        status:
+          group_info:
+            label: 'Statusul publicat'
+            group_items:
+              2:
+                title: Nepublicat
+  page_1:
+    display_title: Page
+    display_options:
+      tab_options:
+        description: 'Găsire şi administrare conţinut'

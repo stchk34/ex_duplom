@@ -1,0 +1,14 @@
+uuid: 14c2d3d7-cb21-4517-a533-8b8a042f0562
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.commentator
+  module:
+    - user
+id: user_remove_role_action.commentator
+label: 'Remove the Commentator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: commentator

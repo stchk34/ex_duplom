@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      empty:
+        area:
+          content:
+            value: "<p>No results found for your request.</p>\r\n"
+            format: basic_html
+      filters:
+        type:
+          expose:
+            label: 'What are you looking for?'
+        created:
+          expose:
+            label: From
+            placeholder: 'Starting date'
+        created_1:
+          expose:
+            label: To
+            placeholder: 'Closing Date'
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'

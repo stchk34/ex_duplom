@@ -1,0 +1,33 @@
+uuid: 9925c364-1d84-4993-bded-b42864b426da
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:600b9d3b-ba15-452f-8522-83233a7a1bd6'
+  module:
+    - block_content
+    - node
+  theme:
+    - moldova
+id: noutati
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:600b9d3b-ba15-452f-8522-83233a7a1bd6'
+settings:
+  id: 'block_content:600b9d3b-ba15-452f-8522-83233a7a1bd6'
+  label: News
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news

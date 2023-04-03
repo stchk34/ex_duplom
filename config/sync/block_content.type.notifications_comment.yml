@@ -1,0 +1,8 @@
+uuid: 6b2d7014-9895-4f19-9ef1-e5c6fcad7252
+langcode: en
+status: true
+dependencies: {  }
+id: notifications_comment
+label: 'Notifications comment'
+revision: 0
+description: ''

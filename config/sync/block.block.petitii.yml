@@ -1,0 +1,30 @@
+uuid: f88b0117-3e39-4e67-9292-ca407fb08707
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:6a40f11a-8ef2-413e-9c46-2bcd49308b9a'
+  module:
+    - block_content
+    - system
+  theme:
+    - moldova
+id: petitii
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:6a40f11a-8ef2-413e-9c46-2bcd49308b9a'
+settings:
+  id: 'block_content:6a40f11a-8ef2-413e-9c46-2bcd49308b9a'
+  label: Petitions
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/petitions-and-addresses\r\n/petytsiyi-ta-zvernennya\r\n/petitii-si-adresari"

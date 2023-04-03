@@ -1,0 +1,8 @@
+uuid: e061412d-ed8a-4b09-9caf-1b46b2db5478
+langcode: ro
+status: true
+dependencies: {  }
+name: 'Position information blocks'
+vid: position_information_blocks
+description: 'Taxonomy for "Information block"  block types'
+weight: 0

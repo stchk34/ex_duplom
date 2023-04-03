@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"Home":"Despre","Image":"Imagine","Edit":"Edit"}}};

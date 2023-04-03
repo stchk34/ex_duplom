@@ -1,0 +1,22 @@
+uuid: 3ccff3cd-9f5d-42e6-bae5-d9342691a8b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.galerie_video_queue
+id: entity_subqueue.galerie_video_queue.status
+field_name: status
+entity_type: entity_subqueue
+bundle: galerie_video_queue
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

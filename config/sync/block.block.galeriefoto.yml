@@ -1,0 +1,33 @@
+uuid: 053ae747-5cfc-4f7f-935b-ab84552ddfeb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:c71bb760-660d-481b-9290-e109083f3cde'
+  module:
+    - block_content
+    - node
+  theme:
+    - moldova
+id: galeriefoto
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:c71bb760-660d-481b-9290-e109083f3cde'
+settings:
+  id: 'block_content:c71bb760-660d-481b-9290-e109083f3cde'
+  label: 'Foto galerry'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      photo_gallery: photo_gallery

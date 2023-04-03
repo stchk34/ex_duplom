@@ -1,0 +1,18 @@
+uuid: c8a37f5e-5269-4337-b790-1ac4361c49ef
+langcode: en
+status: true
+dependencies: {  }
+id: test
+workflow: editorial
+transitions:
+  create_new_draft: create_new_draft
+roles:
+  administrator: administrator
+author: false
+site_mail: true
+emails: ''
+subject: 'A new content item.'
+body:
+  value: "<p>A new node was added.&nbsp;</p>\r\n\r\n<p>Check out [node:edit-url]</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: full_html
+label: 'Adding content.'

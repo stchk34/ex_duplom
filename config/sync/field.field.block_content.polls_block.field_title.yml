@@ -1,0 +1,19 @@
+uuid: 2faf1928-cb3e-45ca-aba1-54a9def61399
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.polls_block
+    - field.storage.block_content.field_title
+id: block_content.polls_block.field_title
+field_name: field_title
+entity_type: block_content
+bundle: polls_block
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

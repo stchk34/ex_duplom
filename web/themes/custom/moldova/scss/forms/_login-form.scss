@@ -1,0 +1,223 @@
+// Stylization popup form.
+#block-userlogin {
+  display: none;
+}
+
+.content {
+  .user-login-form {
+    display: none;
+  }
+}
+
+.ui-dialog.form-login-user {
+  width: 52vw !important;
+  height: 500px !important;
+  animation: fadeOut .25s;
+  background: white;
+  padding: 0;
+  z-index: 999999;
+  overflow-y: hidden;
+
+  small {
+    display: none;
+  }
+
+  input {
+    width: 365px;
+    height: 31px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+    &:focus {
+      border-color: $blue;
+    }
+  }
+
+  .ui-dialog-titlebar {
+    background-color: transparent;
+    padding: 35px 0;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .ui-dialog-title {
+    text-transform: uppercase;
+    color: #2b2b2b;
+    font-family: "Trajan Pro", serif;
+    font-size: 25px;
+    float: none;
+    font-weight: 500;
+    line-height: 1.15;
+  }
+
+  .ui-front.ui-dialog-content.ui-widget-content {
+    height: auto !important;
+    padding: 0;
+  }
+
+  .ui-dialog-buttonpane {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+  }
+
+  .user-login-form {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+
+    #authorization-block-login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .block-social-auth .block-social-auth-login {
+        margin: 16px 0 0;
+      }
+
+      .authorization-message {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .ui-button {
+    background-color: transparent;
+    border: none;
+
+    &:before {
+      display: none;
+      width: 0;
+    }
+
+    &-icon-only {
+      margin-top: -40px;
+    }
+  }
+
+  .js-form-item {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+
+    .js-form-required {
+      &::before {
+        background-image: none;
+        width: 0;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .js-form-submit {
+    color: #fff;
+    background: #023ca7;
+    width: 380px;
+    height: 41px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0 10px;
+    margin: 1rem 0;
+
+    &:active {
+      background: #022d7d;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .ui-dialog.form-login-user {
+    width: 80vw !important;
+    height: 500px !important;
+    left: 8px;
+    animation: fadeOut .55s;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .ui-dialog.form-login-user {
+    width: 93vw !important;
+    height: 470px !important;
+    left: 47px;
+    animation: fadeOut .55s;
+  }
+  .ui-dialog-buttonpane {
+    margin-top: 19px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .ui-dialog.form-login-user {
+    width: 92vw !important;
+    height: 470px !important;
+    left: 17px !important;
+    animation: fadeOut .55s;
+
+    input {
+      width: 250px;
+      padding: 3px 7px;
+      height: 25px;
+    }
+
+    .ui-dialog-title {
+      font-size: 20px;
+    }
+
+    .js-form-submit {
+      width: 200px;
+      padding: 0 7px;
+      margin: 10px 0;
+    }
+
+    .js-form-item {
+      padding: 0;
+    }
+
+    .js-form-required {
+      margin-right: 190px !important;
+    }
+  }
+  .block-field-blockuseruseruser-picture {
+    float: none;
+
+    .field--name-user-picture {
+      img {
+        width: 26vw;
+        height: 25vw;
+        object-fit: contain;
+      }
+    }
+  }
+  #authorization-block-login {
+    .authorization-message {
+      font-size: 14px;
+    }
+
+    .social-auth.auth-icon {
+      width: 35px;
+      border-radius: 50%;
+    }
+  }
+  .block-field-blockuseruserroles, .block-field-blockuseruserstatus, .block-field-blockuserusermail, .block-field-blockuserusername {
+    margin: 5px 0;
+    display: flex;
+    align-items: baseline;
+
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
+
+
+

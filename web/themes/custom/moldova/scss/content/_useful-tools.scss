@@ -1,0 +1,47 @@
+// Useful tools page.
+.view-useful-tools, .node--type-useful-tools {
+  .views-row {
+    border: 1px solid $blue;
+    margin: 0 10px 40px;
+    padding: 40px 50px;
+  }
+
+  .views-field-title, .field--name-title {
+    color: $blue;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .views-field-body, .field--name-body {
+    font-size: 16px;
+    color: #2b2b2b;
+
+    ul {
+      margin-left: 30px;
+
+      li {
+        list-style-type: '――    ';
+        margin: 20px 10px;
+      }
+    }
+  }
+
+  .views-field-field-link, .field--name-field-link {
+    padding-top: 25px;
+
+    a {
+      color: $blue;
+      font-size: 17px;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .pagination {
+    @include pager;
+  }
+}

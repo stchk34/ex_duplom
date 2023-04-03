@@ -1,0 +1,22 @@
+uuid: 28255bd3-759f-45dc-a00f-f170c00a367e
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.galerie_photo_gueue
+id: entity_subqueue.galerie_photo_gueue.status
+field_name: status
+entity_type: entity_subqueue
+bundle: galerie_photo_gueue
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

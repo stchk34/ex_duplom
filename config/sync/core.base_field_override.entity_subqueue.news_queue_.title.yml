@@ -1,0 +1,18 @@
+uuid: 2e69db43-b2dc-4872-ba50-cf90c127ee76
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.news_queue_
+id: entity_subqueue.news_queue_.title
+field_name: title
+entity_type: entity_subqueue
+bundle: news_queue_
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

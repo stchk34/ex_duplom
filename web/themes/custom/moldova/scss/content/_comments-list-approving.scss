@@ -1,0 +1,76 @@
+// View of all new comments.
+.view-comment-rewiev {
+  width: 50%;
+  margin: 0 auto;
+
+  .views-row {
+    border: 1px solid $black_text;
+    margin: 30px 15px;
+    padding: 10px;
+  }
+
+  .views-field {
+    margin: 10px;
+  }
+
+  .views-field-uid a {
+    color: $blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .views-field-approve-comment, .views-field-delete-comment {
+    @include form-btn;
+    width: 110px;
+    height: 32px;
+    padding: 5px 0;
+    display: inline-block;
+
+    a {
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  .pagination {
+    @include pager;
+  }
+}
+
+.comment-example-delete-form {
+  margin: 20px;
+
+  #edit-submit {
+    background-color: $blue;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  #edit-cancel {
+    color: $blue;
+    margin: 10px 20px;
+  }
+}
+
+.comment-example-delete-form {
+  margin-bottom: 200px;
+
+  .js-form-submit {
+    padding-top: 7px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .view-comment-rewiev {
+    width: 100%;
+  }
+}

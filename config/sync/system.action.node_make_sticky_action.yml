@@ -1,0 +1,13 @@
+uuid: f9c95b12-2165-4cca-be60-75e831868795
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
+id: node_make_sticky_action
+label: 'Evidențiați conținutul'
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

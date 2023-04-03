@@ -1,0 +1,33 @@
+uuid: 7c387734-d530-4712-9f33-5373a0186eb3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:017cd8f2-aca3-4381-b0ff-f33cfcfcb553'
+  module:
+    - block_content
+    - user
+  theme:
+    - moldova
+id: loginlogo
+theme: moldova
+region: header_top
+weight: -21
+provider: null
+plugin: 'block_content:017cd8f2-aca3-4381-b0ff-f33cfcfcb553'
+settings:
+  id: 'block_content:017cd8f2-aca3-4381-b0ff-f33cfcfcb553'
+  label: 'Log in logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

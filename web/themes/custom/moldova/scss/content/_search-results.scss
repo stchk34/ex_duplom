@@ -1,0 +1,28 @@
+// Styles for search results.
+.view-search-results, .view-search-filter {
+  max-width: 70%;
+  margin: 0 auto;
+
+  .views-row {
+    margin: 20px 0;
+  }
+
+  strong {
+    background-color: rgba(255, 255, 0, 0.682);
+  }
+
+  .views-field-title a {
+    color: $blue;
+    font-size: 18px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.view-empty {
+  margin-bottom: 15vw;
+  font-size: 24px;
+
+}

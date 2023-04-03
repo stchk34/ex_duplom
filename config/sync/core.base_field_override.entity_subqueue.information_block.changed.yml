@@ -1,0 +1,18 @@
+uuid: 673be22d-49ad-4858-8c9d-2da4f7efde9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.information_block
+id: entity_subqueue.information_block.changed
+field_name: changed
+entity_type: entity_subqueue
+bundle: information_block
+label: Changed
+description: 'The time that the subqueue was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

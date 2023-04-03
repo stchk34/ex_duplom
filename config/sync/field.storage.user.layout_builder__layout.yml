@@ -1,0 +1,23 @@
+uuid: 0ae860ac-6d4e-4466-87f7-b3448d708e15
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - layout_builder
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: user.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: user
+type: layout_section
+settings: {  }
+module: layout_builder
+locked: true
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

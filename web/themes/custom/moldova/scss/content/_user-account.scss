@@ -1,0 +1,85 @@
+//User account page.
+.block-field-blockuseruseruser-picture {
+  float: left;
+  margin-right: 30px;
+}
+
+.block-field-blockuseruserroles, .block-field-blockuseruserstatus, .block-field-blockuserusermail, .block-field-blockuserusername {
+  margin: 10px 0;
+  display: flex;
+  align-items: stretch;
+
+  h2 {
+    margin: 0 5px 0 0;
+    color: #2b2b2b;
+    font-family: "Trajan Pro Regular", serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.35;
+
+    &:after {
+      content: ":"
+    }
+  }
+
+  .field--name-roles, .field--name-mail, .field--name-name {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+  }
+
+  // User status.
+  .user-status-active {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    color: darkgreen;
+  }
+
+  .user-status-inactive {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    color: darkred;
+  }
+}
+
+.block-field-blockuserusercreated {
+  .field--name-created {
+    font-size: 14px;
+    color: #b9b9b9;
+
+    &::before {
+      font-family: 'FontAwesome', serif;
+      content: '\f133';
+      margin-right: 8px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .block-field-blockuseruseruser-picture {
+    margin: 10px;
+
+    img {
+      width: 22vw;
+      height: 22vw;
+    }
+  }
+  .block-field-blockuseruserroles, .block-field-blockuseruserstatus, .block-field-blockuserusermail, .block-field-blockuserusername {
+    h2 {
+      font-size: 17px;
+    }
+
+    .field--name-roles, .field--name-mail, .field--name-name, .user-status-active, .user-status-inactive {
+      font-size: 14px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .block-field-blockuseruseruser-picture {
+    float: none;
+  }
+}

@@ -1,0 +1,23 @@
+.page-404 {
+  text-align: center;
+  font-size: 22px;
+  padding: 70px 0;
+  font-weight: 700;
+
+  .title-404 {
+    font-size: 50px;
+    padding: 8px;
+    color: #27419A;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .page-404 {
+    font-size: 14px;
+    padding: 40px 0;
+
+    .title-404 {
+      font-size: 32px;
+    }
+  }
+}

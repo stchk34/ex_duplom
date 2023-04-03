@@ -1,0 +1,26 @@
+uuid: 2c675f8b-87ee-4b37-aef4-18ad7c3c2dfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_page_news_slider.field_select_new
+    - field.field.node.home_page_news_slider.field_slider_
+    - node.type.home_page_news_slider
+  module:
+    - user
+id: node.home_page_news_slider.teaser
+targetEntityType: node
+bundle: home_page_news_slider
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_select_new: true
+  field_slider_: true
+  langcode: true
+  search_api_excerpt: true

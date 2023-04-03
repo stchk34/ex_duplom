@@ -1,0 +1,33 @@
+moldova.xs:
+  label: X-Small
+  mediaQuery: 'all and (min-width: 320px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+moldova.sm:
+  label: Small
+  mediaQuery: 'all and (min-width: 576px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+moldova.md:
+  label: Medium
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+moldova.lg:
+  label: Large
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 3
+  multipliers:
+    - 1x
+moldova.xl:
+  label: X-Large
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 4
+  multipliers:
+    - 1x

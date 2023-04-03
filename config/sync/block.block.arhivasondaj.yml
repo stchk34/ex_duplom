@@ -1,0 +1,30 @@
+uuid: 1a8ccd96-51fb-4e7e-bfa6-78b4b8e7e298
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:1f4c3239-15e5-42cc-8a24-709d8ab3ad21'
+  module:
+    - block_content
+    - system
+  theme:
+    - moldova
+id: arhivasondaj
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:1f4c3239-15e5-42cc-8a24-709d8ab3ad21'
+settings:
+  id: 'block_content:1f4c3239-15e5-42cc-8a24-709d8ab3ad21'
+  label: 'Arhiva Sondaj'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/arkhiv-status-opytuvan\r\n/arhiva-sondaje-status\r\n/status-polls-archive\r\n/arkhiv-opytuvan-z-lichylnykom-perehlyadiv\r\n/arhiva-sondaje-cu-contor-de-vedere\r\n/polls-archive-view-counter\r\n"

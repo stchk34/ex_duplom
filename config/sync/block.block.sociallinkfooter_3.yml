@@ -1,0 +1,25 @@
+uuid: 6b754ac8-532a-4aaf-83a1-aaf6d6ac9056
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3e2b6f34-563b-468e-85fc-52bb60755cef'
+  module:
+    - block_content
+  theme:
+    - moldova
+id: sociallinkfooter_3
+theme: moldova
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:3e2b6f34-563b-468e-85fc-52bb60755cef'
+settings:
+  id: 'block_content:3e2b6f34-563b-468e-85fc-52bb60755cef'
+  label: 'Social link footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

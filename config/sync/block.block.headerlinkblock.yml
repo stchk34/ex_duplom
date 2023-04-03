@@ -1,0 +1,25 @@
+uuid: ca19bde5-1e56-455b-9d56-b0a40dc79e30
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2173b3dd-cee0-4703-9226-0d1867ae7da6'
+  module:
+    - block_content
+  theme:
+    - moldova
+id: headerlinkblock
+theme: moldova
+region: header_bottom
+weight: 0
+provider: null
+plugin: 'block_content:2173b3dd-cee0-4703-9226-0d1867ae7da6'
+settings:
+  id: 'block_content:2173b3dd-cee0-4703-9226-0d1867ae7da6'
+  label: 'Header link block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

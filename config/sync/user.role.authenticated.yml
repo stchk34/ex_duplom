@@ -1,0 +1,40 @@
+uuid: c1a64bae-55a1-4a0d-b85d-8bdf66d9e17c
+langcode: ro
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - filter
+    - fontawesome
+    - google_analytics
+    - media
+    - poll
+    - search
+    - shortcut
+    - sitemap
+    - statistics
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Utilizator autentificat'
+weight: -9
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access fontawesome additional settings'
+  - 'access poll overview'
+  - 'access polls'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'opt-in or out of google analytics tracking'
+  - 'post comments'
+  - 'search content'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'view post access counter'

@@ -1,0 +1,119 @@
+// Pages with reports.
+.block-views-blockreports-list-block-1 {
+  .view-content {
+    h3 {
+      margin: 60px 0 0;
+      position: relative;
+      display: inline-block;
+      padding-right: 80px;
+      font-family: "Trajan Pro Regular", sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      color: #2b2b2b;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      &:active {
+        color: $blue;
+      }
+
+      &:after {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 60px;
+        content: "";
+        border-top: 3px solid currentColor;
+      }
+    }
+  }
+
+  .views-row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.1rem solid #f0f0f0;
+
+    .views-field-title {
+      a {
+        color: $blue;
+        text-decoration: none;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+//Node report.
+.block-field-blocknodereportsfield-year-term {
+  color: #2b2b2b;
+  font-family: 'Trajan Pro Bold', serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.block-field-blocknodereportstitle {
+  font-family: "Open Sans", sans-serif;
+  color: $blue;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.views-field-field-date, .block-field-blocknodereportsfield-date {
+  display: flex;
+  width: 240px;
+  font-size: 14px;
+  color: #b9b9b9;
+  margin: 16px 0;
+  align-items: center;
+
+  &::before {
+    content: '\f133';
+    font-family: 'Font Awesome 5 Free', serif;
+    font-weight: 500;
+    margin-right: 8px;
+  }
+}
+
+//List taxonomy
+.view-taxonomy-term {
+  margin: 0 auto;
+  width: 50%;
+
+  .node--type-reports {
+    .node__title {
+      a {
+        color: #181818;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .block-views-blockreport-block-1 {
+    .view-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .views-field-title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .views-field-field-year-term a {
+      padding-right: 55px;
+
+      &:after {
+        width: 40px;
+      }
+    }
+  }
+}

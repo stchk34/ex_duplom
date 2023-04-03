@@ -1,0 +1,15 @@
+uuid: fbcf4135-2b2e-4d58-a174-202b1a6392c5
+langcode: en
+status: true
+dependencies: {  }
+name: news_image
+label: 'News image (320×230)'
+effects:
+  b12a5bdd-2b57-45e1-b19e-1e09d0d38929:
+    uuid: b12a5bdd-2b57-45e1-b19e-1e09d0d38929
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: 230
+      upscale: false

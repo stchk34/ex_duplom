@@ -1,0 +1,51 @@
+uuid: 2d7a81d7-c081-4022-b388-4f106349e3d6
+langcode: en
+status: true
+dependencies: {  }
+id: deleting_comment
+label: 'Deleting comment'
+events:
+  -
+    event_name: 'rules_entity_delete:comment--example'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 16eb43e3-22a6-4620-8a02-016396c49631
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: c92e8d5c-c199-48af-a5e3-0fd6eb6cbba8
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 50524690-78da-483c-828b-1095e3f97de1
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 6dee88c6-cddd-4617-bf05-adeffd4fa6ee
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{ comment.uid.entity.mail }}'
+          subject: 'Comment was disapproved.'
+          message: 'Your comment was rewieved and disapproved.'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

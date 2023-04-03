@@ -1,0 +1,52 @@
+display:
+  default:
+    display_title: Expert
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Absteigend
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Primul'
+            last: 'Ultimul »'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      fields:
+        user_bulk_form:
+          action_title: Acțiune
+        name:
+          label: Nume
+          separator: ', '
+        mail:
+          separator: ', '
+        roles:
+          label: Roluri
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        login:
+          label: 'Ultima autentificare'
+          separator: ', '
+        edit_user:
+          label: Modifică
+          text: modifică
+      filters:
+        roles_target_id:
+          expose:
+            label: Roluri
+        uid:
+          expose:
+            label: Nume
+        mail:
+          expose:
+            label: E-mail

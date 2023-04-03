@@ -1,0 +1,14 @@
+uuid: b7170b59-6146-4568-b285-8f43c03bef5b
+langcode: ro
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: mYH14Vi65Ixj10c_GFa7CipxU3D0Bt9wgo8zE8zjOfE
+id: languages
+label: Limbi
+category: Limba
+likert: false
+options: ''

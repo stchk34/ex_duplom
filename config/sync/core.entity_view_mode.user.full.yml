@@ -1,0 +1,12 @@
+uuid: 92763a2c-dbcb-47bd-9027-606ba1dd41b8
+langcode: ro
+status: false
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: mQIF_foYjmnVSr9MpcD4CTaJE_FpO1AyDd_DskztGhM
+id: user.full
+label: 'Cont utilizator'
+targetEntityType: user
+cache: true

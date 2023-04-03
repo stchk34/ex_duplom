@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+{{ attach_library('bootstrap_barrio/form') }}
+<form{{ attributes }}>
+  {{ children }}
+  {% if attributes.hasClass('user-login-form') %}
+    <div id="authorization-block-login">
+      <p class="authorization-message">{{ 'Authorization through social networks:' |t }}</p>
+      {{ drupal_block('social_auth_login') }}
+    </div
+  {% endif %}
+</form>
+

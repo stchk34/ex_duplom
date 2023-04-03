@@ -1,0 +1,6 @@
+settings:
+  confirmation_message: 'Ihre Nachricht wurde gesendet.'
+handlers:
+  email_notification:
+    settings:
+      from_name: _default

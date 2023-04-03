@@ -1,0 +1,6 @@
+display:
+  default:
+    display_options:
+      fields:
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD

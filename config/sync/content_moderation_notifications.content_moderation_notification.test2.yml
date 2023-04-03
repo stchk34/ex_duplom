@@ -1,0 +1,17 @@
+uuid: b18f6493-f673-49a0-ba42-602b23888ac9
+langcode: en
+status: true
+dependencies: {  }
+id: test2
+workflow: editorial
+transitions:
+  disapprove: disapprove
+roles: {  }
+author: true
+site_mail: true
+emails: ''
+subject: Disapproving.
+body:
+  value: "<p>Your node [node:title] was disapproved.</p>\r\n"
+  format: basic_html
+label: 'Disapproving content.'

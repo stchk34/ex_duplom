@@ -1,0 +1,22 @@
+elements: |
+  name:
+    '#title': 'Numele complet'
+    '#required_error': 'Numele complet este necesar.'
+    '#pattern_error': 'Doar 2-40 de litere sunt permise în câmpul de nume, numerele nu sunt permise.'
+  subject:
+    '#title': Subiect
+  message:
+    '#title': Mesaj
+    '#required_error': 'Mesajul este obligatoriu.'
+    '#test': 'Te rog ignoră acest email.'
+  actions:
+    '#title': 'Butoanele de trimitere'
+    '#submit__label': Trimite
+title: 'Expediati e-mail'
+description: 'Formular pentru trimiterea e-mailului.'
+settings:
+  confirmation_message: 'E-mailul DvS a fost trimis cu succes.'
+handlers:
+  email:
+    settings:
+      body: "Un vizitator a trimis o nouă recenzie.<br />\r\n[webform_submission:values]<br />\r\n<br />\r\n&nbsp;"

@@ -1,0 +1,59 @@
+// Right column of useful blocks.
+.view-useful-section {
+  z-index: 100;
+
+  .views-row {
+    width: 83%;
+    float: right;
+    margin-bottom: 40px;
+    position: relative;
+
+    &:hover {
+      .field--name-field-image img {
+        top: 19px;
+        cursor: pointer;
+      }
+
+      a {
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.10);
+      }
+    }
+
+    .field--name-field-image img {
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      margin-left: -37.5px;
+      transition: all 0.3s ease;
+    }
+
+    .field--name-field-useful-link- {
+      text-align: center;
+
+      a {
+        color: $blue;
+        font-size: 16px;
+        border: 1px solid $grey_border;
+        min-height: 188px;
+        padding: 112px 15px 15px;
+        display: block;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .view-useful-section {
+    .views-row {
+      width: 100%;
+
+      .field--name-field-image img {
+        width: 75px;
+        height: 75px;
+        top: 25px;
+        margin-left: -37.5px;
+      }
+    }
+  }
+}

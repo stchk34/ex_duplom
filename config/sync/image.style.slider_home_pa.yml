@@ -1,0 +1,15 @@
+uuid: 74725a74-537f-403d-b981-e965c7ed391c
+langcode: en
+status: true
+dependencies: {  }
+name: slider_home_pa
+label: 'Slider home page'
+effects:
+  d47a5a4a-35d7-4ce5-84c8-27a0e16fa5aa:
+    uuid: d47a5a4a-35d7-4ce5-84c8-27a0e16fa5aa
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: 400
+      upscale: true

@@ -1,0 +1,8 @@
+uuid: cab26671-a500-46c1-a274-1e8a5fd87674
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: U5VlGjd_SfV0Qm_EfnaynOfc549cNscFAx48JfYoMRI
+id: default
+label: Implicit

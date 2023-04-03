@@ -1,0 +1,22 @@
+uuid: bb70277f-6422-4501-b887-501bda00993e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: polls
+label: Polls
+type: 'canonical_entities:node'
+pattern: '/archiva-sondaje/[node:field_sondaj:entity:status]/[node:field_sondaj:entity:question]'
+selection_criteria:
+  b7e41df0-7603-4ff2-83ac-a7f1d4809a61:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b7e41df0-7603-4ff2-83ac-a7f1d4809a61
+    context_mapping:
+      node: node
+    bundles:
+      survey_archive: survey_archive
+selection_logic: and
+weight: -5
+relationships: {  }

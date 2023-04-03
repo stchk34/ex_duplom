@@ -1,0 +1,12 @@
+uuid: 7334fd47-10f1-42c3-9c57-c29154eece70
+langcode: ro
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fVFfJv_GzBRE-wpRHbfD5a3VjnhbEOXG6lvRd3uaccY
+id: node.search_index
+label: 'Index căutare'
+targetEntityType: node
+cache: true

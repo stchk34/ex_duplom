@@ -1,0 +1,10 @@
+uuid: 2fd33987-f81d-4245-9ffc-54c57326e027
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sapEi2YDGoI9yQIT_WgIV2vUdQ6DScH0V3fAyTadAL0
+id: admin
+label: Administrare
+description: 'Legături către task-uri administrative'
+locked: true

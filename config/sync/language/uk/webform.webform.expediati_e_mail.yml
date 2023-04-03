@@ -1,0 +1,25 @@
+title: 'Відправити лист'
+description: 'Форма для надсилання електрониих листів.'
+elements: |
+  name:
+    '#title': 'Повне ім''я'
+    '#required_error': 'Поле імені обов''язкове.'
+    '#pattern_error': 'У полі імені допускається лише 2-40 літер, цифри не допускаються.'
+  email:
+    '#title': 'Електронна адреса'
+  subject:
+    '#title': Тема
+    '#test': 'Тестування контактної веб-форми з [site:name]'
+  message:
+    '#title': Повідомлення
+    '#required_error': 'Поле повідомлення обов''язкове.'
+    '#test': 'Будь ласка, ігноруйте цей електронний лист.'
+  actions:
+    '#title': 'Кнопка(и) надіслати'
+    '#submit__label': Надіслати
+settings:
+  confirmation_message: 'Ваш електронний лист успішно надіслано.'
+handlers:
+  email:
+    settings:
+      body: "Відвідувач залишив новий відгук.<br />\r\n[webform_submission:values]<br />\r\n<br />\r\n&nbsp;"

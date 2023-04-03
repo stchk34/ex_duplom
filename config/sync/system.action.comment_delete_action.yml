@@ -1,0 +1,13 @@
+uuid: 36a35736-847b-4fa7-b776-8a6e839bae9a
+langcode: ro
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: vpBH8OmL4sdesCdeZLsW8KOutB5gkbreWJbfjhfFKaQ
+id: comment_delete_action
+label: 'Şterge comentariu'
+type: comment
+plugin: 'entity:delete_action:comment'
+configuration: {  }

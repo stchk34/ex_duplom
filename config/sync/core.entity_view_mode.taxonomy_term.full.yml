@@ -1,0 +1,12 @@
+uuid: 4d7d786a-53bd-486f-a380-c00081e7670d
+langcode: ro
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: '-PPKjsNQPvoIDjOuUAvlLocYD976MNjb9Zpgyz5_BWE'
+id: taxonomy_term.full
+label: 'Pagina unui termen de taxonomie'
+targetEntityType: taxonomy_term
+cache: true

@@ -1,0 +1,26 @@
+uuid: 3773d8cd-7020-405b-a4a3-220564732224
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: galerie_video_queue
+label: 'Galerie video queue'
+handler: multiple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      video_gallery: video_gallery
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

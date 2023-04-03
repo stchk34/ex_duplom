@@ -1,0 +1,45 @@
+title: Петиції
+elements: |
+  cimpurile_marcate_cu_sunt_obligatorii_:
+    '#title': 'Поля, позначені *, обов''язкові для заповнення.'
+  name:
+    '#title': 'Ім''я'
+    '#first__title': 'Ім''я'
+    '#middle__title': Середній
+    '#last__title': Останній
+    '#suffix__title': Суфікс
+    '#degree__title': Ступінь
+  domiciliu:
+    '#title': Адреса
+    '#required_error': 'Це поле є обов''язковим'
+  email:
+    '#title': 'Електронна пошта'
+    '#required_error': 'Це поле є обов''язковим'
+  catre:
+    '#title': Автор
+    '#required_error': 'Будь ласка, введіть свій вибір'
+  obiectui_petitie_si_motivarea_acesteria:
+    '#title': 'Предмет клопотання та його мотивація'
+    '#required_error': 'Це поле є обов''язковим'
+  anexa_petitie:
+    '#title': 'Додаток до петиції'
+  workflow:
+    '#title': 'Підтвердити петицію'
+  actions:
+    '#title': 'Кнопка(и) надіслати'
+    '#submit__label': Відправити
+settings:
+  confirmation_url: ''
+  form_access_denied_message: 'Якщо ви хочете надіслати петицію, вам потрібно авторизуватися'
+  confirmation_message: 'Вашa петиція подана та в процесі обробки, будь ласка, дочекайтеся повідомлення з підтвердженням.'
+handlers:
+  email:
+    label: 'Електронна пошта'
+    settings:
+      body: "Відвідувач подав нову петицію.<br />\r\nСхвалити або відхилити петицію тут:<br />\r\n[webform_submission:url:canonical]"
+  manager_approved:
+    label: 'Затверджено менеджером'
+  admin_approved:
+    label: 'Петицію прийнято'
+  disapprove_petition:
+    label: 'Петицію відхилено'

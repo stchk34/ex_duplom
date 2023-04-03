@@ -1,0 +1,23 @@
+uuid: f06b09ae-1af0-4e39-94fc-a11f6ce3679f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_results
+  module:
+    - views
+  theme:
+    - moldova
+id: exposedformsearch_resultspage_1
+theme: moldova
+region: header_top
+weight: -24
+provider: null
+plugin: 'views_exposed_filter_block:search_results-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_results-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility: {  }

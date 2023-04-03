@@ -1,0 +1,17 @@
+uuid: 5fd9d0ab-844c-40e4-b106-84a475508532
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ClPoYNWUET68N1rNueZg_5KeyC2sNona4FTbDF-j1ZE
+id: cache_document_default_7_0_0
+label: 'Document Cache'
+minimum_solr_version: 7.0.0
+environments: {  }
+cache:
+  name: document
+  class: solr.LRUCache
+  size: 512
+  initialSize: 512
+  autowarmCount: 0
+solr_configs: null

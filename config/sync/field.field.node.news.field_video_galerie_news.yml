@@ -1,0 +1,31 @@
+uuid: 6d3109b8-f751-433e-904f-b3a5cb141ab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_galerie_news
+    - media.type.remote_video
+    - media.type.video
+    - node.type.news
+id: node.news.field_video_galerie_news
+field_name: field_video_galerie_news
+entity_type: node
+bundle: news
+label: 'Video galerry'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: remote_video
+field_type: entity_reference

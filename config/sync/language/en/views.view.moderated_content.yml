@@ -1,0 +1,43 @@
+label: 'Conținut moderat'
+display:
+  default:
+    display_title: Default
+    display_options:
+      title: 'Conținut moderat'
+      fields:
+        type:
+          label: 'Tip conţinut'
+        name:
+          label: Autor
+        moderation_state:
+          label: 'Starea de moderare'
+        changed:
+          label: Actualizat
+        operations:
+          label: Operaţii
+      pager:
+        options:
+          tags:
+            next: 'Următor ›'
+            previous: '‹ Anterior'
+            first: '« Primul'
+            last: 'Ultimul »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        type:
+          expose:
+            label: 'Tip conţinut'
+        moderation_state:
+          expose:
+            label: 'Starea de moderare'
+  moderated_content:
+    display_title: 'Conținut moderat'

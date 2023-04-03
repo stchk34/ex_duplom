@@ -1,0 +1,20 @@
+uuid: fce27d06-5d54-4e95-8500-e933f55ee285
+langcode: en
+status: true
+dependencies:
+  theme:
+    - moldova
+id: tabs
+theme: moldova
+region: content
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

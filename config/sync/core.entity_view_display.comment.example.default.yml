@@ -1,0 +1,29 @@
+uuid: d7604dc5-07b4-4538-a818-e9896d9f7c43
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.example
+    - field.field.comment.example.field_date_comment
+    - field.field.comment.example.field_text_comment
+id: comment.example.default
+targetEntityType: comment
+bundle: example
+mode: default
+content:
+  field_text_comment:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_date_comment: true
+  langcode: true
+  search_api_excerpt: true

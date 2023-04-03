@@ -1,0 +1,108 @@
+.webform-submission-proposition-form {
+  background: #f5f5f5;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 4%;
+  grid-row-gap: 2%;
+  justify-content: center;
+  margin-bottom: 10px;
+  height: 730px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  input, textarea {
+    @include form-input;
+  }
+
+  input {
+    width: 100%;
+    min-width: 30px;
+    height: 45px;
+    padding: 5px 8px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 130px;
+    padding: 5px 8px;
+  }
+
+  .iti--allow-dropdown {
+    margin-top: 3px;
+    width: 100%;
+  }
+
+  .form-item-opinion, .form-item-proposition {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  label[for="edit-title"] {
+    margin: 45px 0 10px;
+    grid-column-end: span 2;
+    font-size: 16px;
+  }
+
+  .form-required::after {
+    background-image: url(../images/form/required.png);
+  }
+
+  .webform-button--submit {
+    @include form-btn;
+    margin: 20px 0 50px;
+  }
+
+  div[data-drupal-messages] {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: 10px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .webform-submission-proposition-form {
+    display: block;
+    padding: 1px 20px;
+    height: 820px;
+
+    .js-form-item {
+      margin: 7px 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .webform-submission-proposition-form {
+    display: grid;
+    grid-template-columns: 46% 46%;
+    grid-column-gap: 2%;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .webform-submission-proposition-form {
+    display: block;
+    padding: 1px 20px;
+    height: 720px;
+
+    .js-form-item {
+      margin: 7px 0;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    .iti--allow-dropdown {
+      width: 100%;
+    }
+
+    .webform-button--submit {
+      margin-top: 10px;
+    }
+  }
+}

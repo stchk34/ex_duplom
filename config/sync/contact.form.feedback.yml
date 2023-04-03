@@ -1,0 +1,14 @@
+uuid: 7486ade0-09f1-4b4b-9460-329695402c6d
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Feedback-ul sitului'
+recipients:
+  - admin@example.com
+reply: ''
+weight: 0
+message: 'Mesajul tău a fost trimis.'
+redirect: ''

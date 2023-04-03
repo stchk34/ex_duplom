@@ -1,0 +1,8 @@
+uuid: 16066955-0b9b-4183-807c-10a3b84e2fbf
+langcode: en
+status: true
+dependencies: {  }
+id: poll_block
+label: Sondaj
+revision: 0
+description: ''

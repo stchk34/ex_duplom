@@ -1,0 +1,57 @@
+label: 'News tabs view'
+display:
+  default:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+        view_node_1:
+          text: 'Citeste mai mult'
+      empty:
+        area:
+          content:
+            value: "<p>Momentan nu există știri din această secțiune.</p>\r\n"
+            format: basic_html
+  attachment_1:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+        view_node_1:
+          text: 'Citeste mai mult'
+  attachment_2:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+        view_node_1:
+          text: 'Citeste mai mult'
+  attachment_3:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+        view_node_1:
+          text: 'Citeste mai mult'
+  block_1:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+      use_more_text: 'Citeste toate noutatile'
+      empty:
+        area:
+          content:
+            value: "<p>Momentan nu există știri din această secțiune.</p>\r\n"
+            format: basic_html
+      link_url: /noutati

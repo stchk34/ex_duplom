@@ -1,0 +1,38 @@
+uuid: ffa0c4ff-56d1-450b-a689-63e595d6de46
+langcode: ro
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - field_permissions
+    - filter
+    - media
+    - poll
+    - search
+    - sitemap
+    - statistics
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Utilizatorul anonim'
+weight: -10
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access poll overview'
+  - 'access polls'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view field_comments_notification'
+  - 'view field_notifications_comment'
+  - 'view field_text_notifications'
+  - 'view media'
+  - 'view own field_text_notification'
+  - 'view post access counter'

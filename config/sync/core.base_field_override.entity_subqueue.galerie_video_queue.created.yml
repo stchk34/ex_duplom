@@ -1,0 +1,18 @@
+uuid: a5a6771b-fb58-42a3-9b52-28c87ba381dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.galerie_video_queue
+id: entity_subqueue.galerie_video_queue.created
+field_name: created
+entity_type: entity_subqueue
+bundle: galerie_video_queue
+label: 'Authored on'
+description: 'The time that the subqueue was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

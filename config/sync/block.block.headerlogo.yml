@@ -1,0 +1,25 @@
+uuid: 66b4bc23-a708-446a-8786-56aed1c02b25
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c66f82cf-a0e5-445e-8b79-c1c3e226eec6'
+  module:
+    - block_content
+  theme:
+    - moldova
+id: headerlogo
+theme: moldova
+region: logo
+weight: -24
+provider: null
+plugin: 'block_content:c66f82cf-a0e5-445e-8b79-c1c3e226eec6'
+settings:
+  id: 'block_content:c66f82cf-a0e5-445e-8b79-c1c3e226eec6'
+  label: 'Header logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

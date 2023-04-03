@@ -1,0 +1,13 @@
+uuid: 4ecac6f3-ebbb-47ef-9cfe-228195fc10ff
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: t43OqwzP3CTbcAagSsWKNy6KwMm_zShXo3c4-So6rQg
+id: node_delete_action
+label: 'Ștergeți conținut'
+type: node
+plugin: 'entity:delete_action:node'
+configuration: {  }

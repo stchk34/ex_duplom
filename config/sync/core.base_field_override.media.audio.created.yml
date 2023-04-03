@@ -1,0 +1,18 @@
+uuid: 458fbf6a-fa06-4e64-82a2-d45a4b7d3c91
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.created
+field_name: created
+entity_type: media
+bundle: audio
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

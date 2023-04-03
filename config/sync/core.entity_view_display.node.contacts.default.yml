@@ -1,0 +1,299 @@
+uuid: 5d115e00-f36e-44a2-bcd2-bb7b821b32e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contacts.field_adresa
+    - field.field.node.contacts.field_email
+    - field.field.node.contacts.field_fax
+    - field.field.node.contacts.field_locatia
+    - field.field.node.contacts.field_orar_de_lucru
+    - field.field.node.contacts.field_telefon
+    - node.type.contacts
+    - views.view.information_block
+    - views.view.right_information_block
+    - views.view.useful_section
+  content:
+    - 'block_content:sidebar:823d784b-5a52-4ce5-a9e0-73d01b467bc8'
+  module:
+    - block_content
+    - layout_builder
+    - layout_discovery
+    - link
+    - telephone
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          74efc876-46e7-4eec-848b-b3c2d016a95f:
+            uuid: 74efc876-46e7-4eec-848b-b3c2d016a95f
+            region: second
+            configuration:
+              id: 'field_block:node:contacts:field_adresa'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          3b173ec6-378f-433f-9810-dbd5d8e57c9f:
+            uuid: 3b173ec6-378f-433f-9810-dbd5d8e57c9f
+            region: second
+            configuration:
+              id: 'field_block:node:contacts:field_telefon'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: above
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          1fe35882-5174-4aba-b549-cdda6654e7aa:
+            uuid: 1fe35882-5174-4aba-b549-cdda6654e7aa
+            region: second
+            configuration:
+              id: 'field_block:node:contacts:field_fax'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: above
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          439903cc-00c5-454c-9782-a5262c2d1cc3:
+            uuid: 439903cc-00c5-454c-9782-a5262c2d1cc3
+            region: second
+            configuration:
+              id: 'field_block:node:contacts:field_email'
+              label: 'Електронна пошта:'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: email_mailto
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          e039485c-c961-4437-8005-ebeea3f3445c:
+            uuid: e039485c-c961-4437-8005-ebeea3f3445c
+            region: second
+            configuration:
+              id: 'field_block:node:contacts:field_orar_de_lucru'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          adfa56c6-1c77-4561-abbc-0169e6e14210:
+            uuid: adfa56c6-1c77-4561-abbc-0169e6e14210
+            region: second
+            configuration:
+              id: 'field_block:node:contacts:field_locatia'
+              label: Розташування
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: simple_gmap
+                label: above
+                settings:
+                  include_map: true
+                  include_static_map: false
+                  include_link: false
+                  include_text: false
+                  iframe_height: 500px
+                  iframe_width: 100%
+                  iframe_title: ''
+                  static_scale: 1
+                  zoom_level: 14
+                  link_text: 'View larger map'
+                  map_type: m
+                  langcode: en
+                  apikey: ''
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          242aa07f-f6c9-4d9c-8509-673133d12024:
+            uuid: 242aa07f-f6c9-4d9c-8509-673133d12024
+            region: first
+            configuration:
+              id: 'block_content:823d784b-5a52-4ce5-a9e0-73d01b467bc8'
+              label: Sidebar
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+          dcd0214a-e136-4b41-9d6f-9dd67915e9a8:
+            uuid: dcd0214a-e136-4b41-9d6f-9dd67915e9a8
+            region: third
+            configuration:
+              id: 'views_block:useful_section-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          e1e63a49-238c-48f5-9821-2e851f8afdc9:
+            uuid: e1e63a49-238c-48f5-9821-2e851f8afdc9
+            region: third
+            configuration:
+              id: 'views_block:right_information_block-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          253d51c0-21c8-40bd-a455-fc59b6e91ec5:
+            uuid: 253d51c0-21c8-40bd-a455-fc59b6e91ec5
+            region: second
+            configuration:
+              id: 'field_block:node:contacts:title'
+              label: Titlu
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          f7764f01-d4a6-4164-a217-5b117d65b51c:
+            uuid: f7764f01-d4a6-4164-a217-5b117d65b51c
+            region: content
+            configuration:
+              id: 'views_block:information_block-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.contacts.default
+targetEntityType: node
+bundle: contacts
+mode: default
+content:
+  field_adresa:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_fax:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_locatia:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_orar_de_lucru:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_telefon:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_title: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

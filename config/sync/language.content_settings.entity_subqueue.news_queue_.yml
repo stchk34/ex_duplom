@@ -1,0 +1,18 @@
+uuid: 19094db6-4d61-45e4-bfbf-7477149ec235
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.news_queue_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.news_queue_
+target_entity_type_id: entity_subqueue
+target_bundle: news_queue_
+default_langcode: site_default
+language_alterable: true

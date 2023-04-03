@@ -1,0 +1,361 @@
+//Survey page.
+.block-field-blocknodesurvey-archivetitle {
+  .field--name-title {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #2b2b2b;
+    font-family: "Trajan Pro", cursive;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 35.1px;
+  }
+}
+
+.views-field-field-start-date {
+  display: inline-flex;
+  align-items: center;
+  width: 240px;
+  padding-left: 58px;
+  font-size: 14px;
+  color: #b9b9b9;
+  margin-left: -58px;
+
+  &::before {
+    font-family: 'Font Awesome 5 Free', serif;
+    font-weight: 500;
+    content: '\f133';
+    margin-right: 8px;
+  }
+}
+
+.poll {
+  .poll-question {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 600;
+    color: $black;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .js-form-item {
+    input {
+      &:before {
+        content: '';
+        border-radius: 5px;
+        width: 90%;
+        height: 25px;
+        background-color: #ddd;
+      }
+    }
+  }
+
+  .choice-result {
+    display: flex;
+
+    .bar {
+      border-radius: 5px;
+      width: 90%;
+      height: 25px;
+      margin-bottom: 50px;
+    }
+
+    .foreground {
+      background: #1b419b;
+      width: 90%;
+      border-radius: 4px;
+      height: 25px;
+    }
+  }
+
+  .percent {
+    margin-left: 20px;
+
+    &-value {
+      color: #1b419b;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    &-percentage {
+      font-size: 14px;
+    }
+  }
+
+  .form-actions {
+    margin-top: 20px;
+  }
+
+  .js-form-submit {
+    @include form-btn;
+  }
+}
+
+input[data-drupal-selector="edit-result"] {
+  display: none;
+}
+
+input[data-drupal-selector="edit-cancel"] {
+  @include form-btn;
+}
+
+.poll-view {
+  &-form {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+//Lists with surveys.
+.block-views-blockarhiva-sondaje-with-comment-block-1 {
+  .view-content {
+    margin-top: 10px;
+  }
+
+  .views-row {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .views-field-question {
+    .field-content {
+      a {
+        color: $blue;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.35;
+
+        &:hover {
+          color: #2b2b2b;
+        }
+
+        &:visited {
+          color: $blue;
+        }
+      }
+    }
+
+  }
+
+  .views-field-counter {
+    font-size: 14px;
+    color: #b9b9b9;
+    margin-right: 0;
+    display: inline-block;
+    margin-left: 3%;
+
+    &::before {
+      font-family: 'Font Awesome 5 Free', serif;
+      content: '\f06e';
+      font-weight: 900;
+      margin-right: 5px;
+    }
+  }
+}
+
+//List of polls with status (implemented by grid).
+.block-views-blockarhiva-sondaje-with-status-block-1 {
+  .view-content {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+
+    .views-row {
+      padding: 20px;
+      border: 1px solid #e5e5e5;
+      background: #f5f5f5;
+      min-height: 330px;
+      width: 23vw;
+      margin: 0 15px 30px 0;
+
+      .views-field-question {
+        a {
+          margin-bottom: 20px;
+          color: $blue;
+          line-height: 1.6;
+          font-size: 14px;
+          font-weight: 700;
+
+          &:link {
+            color: $blue;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .views-field-totalcount {
+        font-size: 14px;
+        color: #b9b9b9;
+        margin-right: 0;
+        display: inline-block;
+        margin-left: 3%;
+
+        &::before {
+          font-family: 'Font Awesome 5 Free', serif;
+          content: '\f06e';
+          font-weight: 900;
+          margin-right: 5px;
+        }
+      }
+
+      .views-field-status {
+        .poll-card--status-inactive {
+          position: relative;
+          padding-left: 20px;
+          white-space: nowrap;
+          line-height: 1.1;
+          color: #b9b9b9;
+          margin-bottom: 20px;
+          font-size: 16px;
+          font-weight: 700;
+
+          &:before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            content: "";
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background: currentColor;
+          }
+        }
+
+        .poll-card--status-active {
+          position: relative;
+          padding-left: 20px;
+          white-space: nowrap;
+          line-height: 1.1;
+          color: #418741;
+          margin-bottom: 20px;
+          font-size: 16px;
+          font-weight: 700;
+
+          &:before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            content: "";
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background: currentColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .block-views-blockarhiva-sondaje-with-status-block-1 {
+    .view-content {
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      justify-items: center;
+
+      .views-row {
+        Width: 15vw;
+        height: auto;
+
+        .views-field-question {
+          .field-content {
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .block-views-blockarhiva-sondaje-with-status-block-1 {
+    .view-content {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+    }
+
+    .views-row {
+      margin: 25px 25px;
+      width: 23vw;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .block-views-blockarhiva-sondaje-with-status-block-1 {
+    .view-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .views-row {
+      margin: 0 auto 25px;
+      width: 35vw;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .block-views-blockarhiva-sondaje-with-comment-block-1 {
+    .views-field-question {
+      font-size: 14px;
+    }
+  }
+  .block-views-blockarhiva-sondaje-with-status-block-1 {
+    .view-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+
+      .views-row {
+        width: 40vw;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .block-views-blockarhiva-sondaje-with-comment-block-1 {
+    .view-content {
+      margin: 20px 35px;
+    }
+  }
+  .block-views-blockarhiva-sondaje-with-status-block-1 {
+    .view-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+
+      .views-row {
+        margin: 0 0 25px 0;
+        width: 77vw;
+      }
+    }
+  }
+
+  .poll-view-form {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .poll {
+    .poll-question {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .choice-result .bar {
+      width: 59%;
+    }
+  }
+}
+

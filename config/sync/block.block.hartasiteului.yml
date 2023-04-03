@@ -1,0 +1,30 @@
+uuid: 82017a2e-1653-4f76-ada7-41a1b54f4066
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:d9fa17d3-7a95-4cd8-8478-bc9da242e8d8'
+  module:
+    - block_content
+    - system
+  theme:
+    - moldova
+id: hartasiteului
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:d9fa17d3-7a95-4cd8-8478-bc9da242e8d8'
+settings:
+  id: 'block_content:d9fa17d3-7a95-4cd8-8478-bc9da242e8d8'
+  label: 'Site map'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /sitemap

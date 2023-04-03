@@ -1,0 +1,35 @@
+uuid: fdc25451-c033-4a96-aefd-21cf7b718619
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contacts.field_adresa
+    - field.field.node.contacts.field_email
+    - field.field.node.contacts.field_fax
+    - field.field.node.contacts.field_locatia
+    - field.field.node.contacts.field_orar_de_lucru
+    - field.field.node.contacts.field_telefon
+    - node.type.contacts
+  module:
+    - user
+id: node.contacts.teaser
+targetEntityType: node
+bundle: contacts
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+hidden:
+  field_adresa: true
+  field_email: true
+  field_fax: true
+  field_locatia: true
+  field_orar_de_lucru: true
+  field_telefon: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

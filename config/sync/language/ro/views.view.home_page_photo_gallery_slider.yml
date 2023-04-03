@@ -1,0 +1,11 @@
+display:
+  default:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+      title: 'Galerie photo'
+      use_more_text: 'Vezi toate'
+      link_url: /galerie-foto

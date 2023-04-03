@@ -1,0 +1,18 @@
+uuid: 51cb0a0f-433c-4885-92b5-e508c6e52666
+langcode: uk
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.news_slider
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.news_slider
+target_entity_type_id: entity_subqueue
+target_bundle: news_slider
+default_langcode: site_default
+language_alterable: true

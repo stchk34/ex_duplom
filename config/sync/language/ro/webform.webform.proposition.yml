@@ -1,0 +1,18 @@
+elements: |
+  title:
+    '#title': 'Cîmpurile marcate cu * sunt obligatorii.'
+  name:
+    '#first__title': Nume
+  surname:
+    '#first__title': Prenume
+  telefon:
+    '#title': Telefon
+  proposition:
+    '#title': Propuneri
+  actions:
+    '#submit__label': Trimite
+title: Propuneri
+handlers:
+  email:
+    settings:
+      body: "Un vizitator a trimis o nouă propunere.<br />\r\n[webform_submission:values]"

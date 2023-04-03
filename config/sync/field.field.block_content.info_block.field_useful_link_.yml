@@ -1,0 +1,23 @@
+uuid: 6ccacba9-b17e-4d32-943c-27ee4032657e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.info_block
+    - field.storage.block_content.field_useful_link_
+  module:
+    - link
+id: block_content.info_block.field_useful_link_
+field_name: field_useful_link_
+entity_type: block_content
+bundle: info_block
+label: 'Useful link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

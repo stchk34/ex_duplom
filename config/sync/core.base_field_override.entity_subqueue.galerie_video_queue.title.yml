@@ -1,0 +1,18 @@
+uuid: 76dd8cc9-36b8-400c-8f6e-d91bb8012473
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.galerie_video_queue
+id: entity_subqueue.galerie_video_queue.title
+field_name: title
+entity_type: entity_subqueue
+bundle: galerie_video_queue
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

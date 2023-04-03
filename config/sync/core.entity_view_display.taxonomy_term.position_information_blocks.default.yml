@@ -1,0 +1,23 @@
+uuid: 08d573c4-2eb9-4dba-a095-e9391e46137e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.position_information_blocks
+  module:
+    - text
+id: taxonomy_term.position_information_blocks.default
+targetEntityType: taxonomy_term
+bundle: position_information_blocks
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

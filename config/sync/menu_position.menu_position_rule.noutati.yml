@@ -1,0 +1,21 @@
+uuid: 8e9e115c-0c6b-4194-bfd7-83d62ac6c97b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: noutati
+label: News
+menu_name: main
+parent: 'menu_link_content:c953c46a-90cc-4026-a39c-ca8b77c8ae21'
+menu_link: 'menu_position_link:noutati'
+enabled: true
+weight: null
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news

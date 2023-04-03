@@ -1,0 +1,23 @@
+uuid: 64f9c8bc-7c06-474b-af64-54ff887d794c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_
+    - field.storage.block_content.field_link_logout
+  module:
+    - link
+id: block_content.link_.field_link_logout
+field_name: field_link_logout
+entity_type: block_content
+bundle: link_
+label: 'Link logout'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,19 @@
+uuid: 8e241cca-4052-4dd8-a3d9-23a42dcaeaba
+langcode: ro
+status: true
+dependencies:
+  config:
+    - block_content.type.notifications_comment
+    - field.storage.block_content.field_text_notifications
+id: block_content.notifications_comment.field_text_notifications
+field_name: field_text_notifications
+entity_type: block_content
+bundle: notifications_comment
+label: 'Text notifications'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

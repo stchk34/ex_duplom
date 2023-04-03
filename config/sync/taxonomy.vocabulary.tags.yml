@@ -1,0 +1,10 @@
+uuid: 9947e4e0-c1ed-409c-a920-7849f3c52e56
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+name: Etichete
+vid: tags
+description: 'Folosiți taguri pentru a grupa articolele similare în categorii.'
+weight: 0

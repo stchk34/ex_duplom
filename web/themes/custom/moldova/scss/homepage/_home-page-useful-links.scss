@@ -1,0 +1,136 @@
+.block-views-blockhome-page-useful-links-slider-block-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 50px;
+  background-color: #f5f5f5;
+
+  h2 {
+    text-align: center;
+    width: 100%;
+    font-family: 'Trajan Pro Regular', serif;
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: 24px;
+    font-weight: 200;
+    color: $black_text;
+    text-transform: uppercase;
+  }
+
+  .content {
+    max-width: 1830px;
+  }
+
+  .view-home-page-useful-links-slider {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .slick__slide {
+    display: flex;
+    height: 75px;
+    margin: 0 20px;
+    border: 1px solid #d5dbe9;
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+
+    .views-field-field-u {
+      padding: 0 5px 0 10px;
+      font-family: 'Trajan Pro Bold', serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $blue;
+
+      .field-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 75px;
+        width: 100%;
+        color: $blue;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        object-fit: cover;
+
+      }
+    }
+    .views-field-field-image {
+      display: flex;
+      align-items: center;
+      img {
+        height: 55px;
+        width: 57px;
+        padding-left: 10px;
+      }
+    }
+    &:hover {
+      transform: scale(1.04);
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+
+    li {
+      margin: 0 8px;
+    }
+
+    .slick-active {
+      button {
+        background: $blue;
+      }
+    }
+
+    button {
+      height: 13px;
+      width: 13px;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      border: 1px solid $blue;
+      border-radius: 50px;
+      color: transparent;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .block-views-blockhome-page-useful-links-slider-block-1 {
+    h2 {
+      font-size: 20px;
+    }
+
+    .slick__slide:hover {
+      transform: scale(1);
+    }
+
+    .slick-dots {
+      li {
+        margin: 0 6px;
+      }
+
+      button {
+        height: 9px;
+        width: 9px;
+      }
+    }
+  }
+}

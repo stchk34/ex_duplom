@@ -1,0 +1,191 @@
+uuid: baa5c1a4-abbf-4b78-afa4-44cdfcd24bb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faq.field_faq
+    - node.type.faq
+    - views.view.information_block
+    - views.view.poll_right_block
+    - views.view.right_information_block
+  content:
+    - 'block_content:sidebar:823d784b-5a52-4ce5-a9e0-73d01b467bc8'
+  module:
+    - block_content
+    - faqfield
+    - layout_builder
+    - layout_discovery
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          cce02ce5-8f75-4a75-980d-6265c30047a0:
+            uuid: cce02ce5-8f75-4a75-980d-6265c30047a0
+            region: second
+            configuration:
+              id: 'field_block:node:faq:field_faq'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: faqfield_accordion
+                label: hidden
+                settings:
+                  active: null
+                  heightStyle: content
+                  collapsible: true
+                  event: click
+                  animate:
+                    easing: linear
+                    duration: 200
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          1ec0018f-9b3f-43f2-86ed-03775587f8fc:
+            uuid: 1ec0018f-9b3f-43f2-86ed-03775587f8fc
+            region: content
+            configuration:
+              id: 'field_block:node:faq:field_faq'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: faqfield_accordion
+                label: hidden
+                settings:
+                  active: null
+                  heightStyle: content
+                  collapsible: true
+                  event: click
+                  animate:
+                    easing: linear
+                    duration: 200
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          00a791f6-61ed-4671-9ddc-73ac3dd44bf9:
+            uuid: 00a791f6-61ed-4671-9ddc-73ac3dd44bf9
+            region: content
+            configuration:
+              id: 'extra_field_block:node:faq:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          2dce3371-044b-4e13-9125-ef0b222d125f:
+            uuid: 2dce3371-044b-4e13-9125-ef0b222d125f
+            region: first
+            configuration:
+              id: 'block_content:823d784b-5a52-4ce5-a9e0-73d01b467bc8'
+              label: Sidebar
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
+          de0aa85a-a5ef-4029-95b2-ec472bb7569d:
+            uuid: de0aa85a-a5ef-4029-95b2-ec472bb7569d
+            region: second
+            configuration:
+              id: 'extra_field_block:node:faq:content_moderation_control'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+          93f76d18-d4eb-4d45-bb71-9a42d76336f9:
+            uuid: 93f76d18-d4eb-4d45-bb71-9a42d76336f9
+            region: third
+            configuration:
+              id: 'views_block:poll_right_block-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          6d13d155-1341-41b4-a243-28ea19ecf5d5:
+            uuid: 6d13d155-1341-41b4-a243-28ea19ecf5d5
+            region: third
+            configuration:
+              id: 'views_block:right_information_block-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          bc95c9fb-b35a-40be-a366-70ccadc5ed1b:
+            uuid: bc95c9fb-b35a-40be-a366-70ccadc5ed1b
+            region: content
+            configuration:
+              id: 'views_block:information_block-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.faq.default
+targetEntityType: node
+bundle: faq
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: second
+  field_faq:
+    type: faqfield_accordion
+    label: hidden
+    settings:
+      active: null
+      heightStyle: content
+      collapsible: true
+      event: click
+      animate:
+        easing: linear
+        duration: 200
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,35 @@
+// Rss modal window.
+.ui-widget.rss-links-modal {
+  padding: 0 0 10px 0;
+  border: none;
+  outline: none;
+
+  .ui-dialog-titlebar {
+    background-color: $blue;
+    margin: 0;
+    color: white;
+    text-align: center;
+    border: none;
+  }
+
+  .field--name-body p {
+    border: 1px solid $blue;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+
+    &:first-child {
+      border-top: 1px solid $blue;
+    }
+  }
+
+  .field--name-body a {
+    @include form-btn;
+    width: 80px;
+    height: 26px;
+    padding: 3.5px;
+    font-size: 14px;
+    float: right;
+    margin-top: -3px;
+  }
+}

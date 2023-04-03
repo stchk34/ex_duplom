@@ -1,0 +1,33 @@
+uuid: ce1724a2-7ed0-4200-a706-1f0d4de03a86
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:8836a89b-0270-43c5-b365-ce83c70fab95'
+  module:
+    - block_content
+    - node
+  theme:
+    - moldova
+id: galerievideo
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:8836a89b-0270-43c5-b365-ce83c70fab95'
+settings:
+  id: 'block_content:8836a89b-0270-43c5-b365-ce83c70fab95'
+  label: 'Video gallery'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      video_gallery: video_gallery

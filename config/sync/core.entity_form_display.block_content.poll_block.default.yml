@@ -1,0 +1,64 @@
+uuid: dcba3fde-3672-43eb-b9d0-de49865c1542
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.poll_block
+    - field.field.block_content.poll_block.body
+    - field.field.block_content.poll_block.field_link_poll
+    - field.field.block_content.poll_block.field_poll_body
+    - field.field.block_content.poll_block.field_title_block_sondaj
+  module:
+    - link
+    - text
+id: block_content.poll_block.default
+targetEntityType: block_content
+bundle: poll_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_link_poll:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_poll_body:
+    type: options_buttons
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title_block_sondaj:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  info: true

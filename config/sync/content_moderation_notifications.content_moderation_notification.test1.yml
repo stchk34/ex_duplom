@@ -1,0 +1,17 @@
+uuid: cf7960d0-9dae-465b-ac59-4e16f230906e
+langcode: en
+status: true
+dependencies: {  }
+id: test1
+workflow: editorial
+transitions:
+  publish: publish
+roles: {  }
+author: true
+site_mail: false
+emails: ''
+subject: Published.
+body:
+  value: "<p>Your node [node:title] was published.</p>\r\n"
+  format: basic_html
+label: 'Publishing content.'

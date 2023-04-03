@@ -1,0 +1,18 @@
+uuid: f20b5173-fc61-4445-bde8-43b81b7d7610
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contacts
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.contacts
+target_entity_type_id: node
+target_bundle: contacts
+default_langcode: current_interface
+language_alterable: false

@@ -1,0 +1,27 @@
+uuid: d649ad55-10d6-4bb4-9b9e-7ca9a16ae1cd
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - slick
+_core:
+  default_config_hash: jHmfPBU2oNraKWjKwqYODaPOKQQM2sczj5TlDlN8Om8
+id: media_slider
+name: media_slider
+weight: -10
+label: 'Media slider'
+group: ''
+skin: default
+breakpoints: 0
+optimized: true
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    prevArrow: ''
+    nextArrow: ''
+    dots: true
+    lazyLoad: ondemand
+    rows: 0
+    slidesToShow: 1
+    swipeToSlide: true

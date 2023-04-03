@@ -1,0 +1,42 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Miniatură
+        uid:
+          label: Autor
+        status:
+          settings:
+            format_custom_false: Nepublicat
+        changed:
+          label: Actualizat
+        operations:
+          label: Operaţii
+      pager:
+        options:
+          tags:
+            next: 'Următor ›'
+            previous: '‹ Anterior'
+            first: '« Primul'
+            last: 'Ultimul »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        status:
+          expose:
+            label: Adevărat
+          group_info:
+            label: 'Statusul publicat'
+            group_items:
+              2:
+                title: Nepublicat

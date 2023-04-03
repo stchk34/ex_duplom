@@ -1,0 +1,36 @@
+uuid: b69121d3-e852-45bd-ba3f-98846173dea7
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.server.main_search
+  module:
+    - search_api
+    - node
+id: main
+name: main
+description: ''
+read_only: false
+field_settings: {  }
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: main_search

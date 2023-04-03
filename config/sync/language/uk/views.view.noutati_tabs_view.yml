@@ -1,0 +1,58 @@
+display:
+  default:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+        view_node_1:
+          text: 'Читати далі'
+      empty:
+        area:
+          content:
+            value: "<p>На даний момент немає новин з цього розділу.</p>\r\n"
+            format: basic_html
+  attachment_1:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+        view_node_1:
+          text: 'Читати далі'
+  attachment_2:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+        view_node_1:
+          text: 'Читати далі'
+  attachment_3:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+        view_node_1:
+          text: 'Читати далі'
+  block_1:
+    display_options:
+      fields:
+        totalcount:
+          format_plural_string: !!binary MQNAY291bnQD
+        comment_count:
+          format_plural_string: !!binary MQNAY291bnQD
+        view_node_1:
+          text: 'Читати далі'
+      use_more_text: 'Читайте всі новини'
+      empty:
+        area:
+          content:
+            value: "<p>На даний момент немає новин з цього розділу.</p>\r\n"
+            format: basic_html
+      link_url: /novyny

@@ -1,0 +1,13 @@
+uuid: 1def726c-13c4-451d-bfb9-c62694d6940c
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
+id: personal
+label: 'Formular personal de contact'
+recipients: {  }
+reply: ''
+weight: 0
+message: 'Mesajul tău a fost trimis.'
+redirect: ''

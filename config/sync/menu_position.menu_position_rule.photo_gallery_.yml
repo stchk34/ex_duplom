@@ -1,0 +1,21 @@
+uuid: 34f9ffe3-0e54-4888-9aaf-b53ea2766191
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: photo_gallery_
+label: 'Photo gallery '
+menu_name: main
+parent: 'menu_link_content:b1e4be7f-197f-4b4c-84ab-5ee4ebdb1a82'
+menu_link: 'menu_position_link:photo_gallery_'
+enabled: true
+weight: null
+conditions:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      photo_gallery: photo_gallery

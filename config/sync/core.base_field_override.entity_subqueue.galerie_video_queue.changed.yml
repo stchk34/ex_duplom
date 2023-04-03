@@ -1,0 +1,18 @@
+uuid: c2965f51-acc3-40ed-bf66-fd94d24dc47f
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.galerie_video_queue
+id: entity_subqueue.galerie_video_queue.changed
+field_name: changed
+entity_type: entity_subqueue
+bundle: galerie_video_queue
+label: Changed
+description: 'The time that the subqueue was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

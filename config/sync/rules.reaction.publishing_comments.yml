@@ -1,0 +1,51 @@
+uuid: e4874dec-38b8-4f6d-a642-dd20d67cfab5
+langcode: en
+status: true
+dependencies: {  }
+id: publishing_comments
+label: 'Publishing comment'
+events:
+  -
+    event_name: 'rules_entity_update:comment--example'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: c4050ad4-65af-4fc7-8b42-c60129bce829
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 85491e6e-1acf-43b2-9c4d-7e407713e346
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 79365286-df6d-4a7e-8eb4-b15fb358facc
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 4d8cdb02-1598-4ae5-8434-52ebf5b6c434
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{ comment.uid.entity.mail }}'
+          subject: 'Comment was approved.'
+          message: 'You comment was rewieved and published.'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

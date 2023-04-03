@@ -1,0 +1,14 @@
+uuid: 52b9f5ae-3df6-46dc-896c-f2abc1d54809
+langcode: ro
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 8rVcRXLnTAEoWs7zl8du-7RIUnayqUcGYnvb3JT21-o
+id: time_zones
+label: 'Fusuri orare'
+category: 'Data şi timp'
+likert: false
+options: ''

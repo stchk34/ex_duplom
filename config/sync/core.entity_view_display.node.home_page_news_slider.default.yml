@@ -1,0 +1,43 @@
+uuid: efec0972-44c2-4a5e-9f5f-d5d043a85c65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home_page_news_slider.field_select_new
+    - field.field.node.home_page_news_slider.field_slider_
+    - node.type.home_page_news_slider
+  module:
+    - image
+    - user
+id: node.home_page_news_slider.default
+targetEntityType: node
+bundle: home_page_news_slider
+mode: default
+content:
+  field_select_new:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_slider_:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

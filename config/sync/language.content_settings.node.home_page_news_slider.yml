@@ -1,0 +1,18 @@
+uuid: e7264e18-a1df-43ea-b29a-2cf38113c30b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_page_news_slider
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.home_page_news_slider
+target_entity_type_id: node
+target_bundle: home_page_news_slider
+default_langcode: current_interface
+language_alterable: true

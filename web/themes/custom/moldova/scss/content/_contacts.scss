@@ -1,0 +1,339 @@
+// Page with site contacts.
+.node--type-contacts .layout__region--second {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+
+  .block-field-blocknodecontactstitle {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: start;
+    margin-bottom: 40px;
+    font-family: 'Trajan Pro Bold', serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: $black_text;
+  }
+
+  .block-field-blocknodecontactsfield-adresa {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 45px;
+    font-size: 14px;
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      content: '\f3c5';
+      font-family: 'Font Awesome 5 Free', serif;
+      font-weight: 900;
+      color: $blue;
+    }
+
+    .field__label {
+      width: 100%;
+      display: flex;
+      margin-bottom: 10px;
+      color: $black_text;
+    }
+
+    .field__item a {
+      font-weight: 700;
+      line-height: 18px;
+      color: $black_text;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .block-field-blocknodecontactsfield-telefon {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 45px;
+    font-size: 14px;
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      content: '\f095';
+      font-family: 'Font Awesome 5 Free', serif;
+      font-weight: 900;
+      color: $blue;
+    }
+
+    .field__label {
+      width: 100%;
+      display: flex;
+      margin-bottom: 10px;
+      color: $black_text;
+    }
+
+    .field__item a {
+      font-weight: 700;
+      line-height: 18px;
+      color: $black_text;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .block-field-blocknodecontactsfield-fax {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 45px;
+    font-size: 14px;
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      content: '\f1ac';
+      font-family: 'Font Awesome 5 Free', serif;
+      font-weight: 900;
+      color: $blue;
+    }
+
+    .field__label {
+      width: 100%;
+      display: flex;
+      margin-bottom: 10px;
+      color: $black_text;
+    }
+
+    .field__item a {
+      font-weight: 700;
+      line-height: 18px;
+      color: $black_text;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .block-field-blocknodecontactsfield-email {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 45px;
+    font-size: 14px;
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      content: '\f0e0';
+      font-family: 'Font Awesome 5 Free', serif;
+      font-weight: 900;
+      color: $blue;
+    }
+
+    .field__label {
+      width: 100%;
+      display: flex;
+      margin-bottom: 10px;
+      color: $black_text;
+    }
+
+    .field__item {
+      font-weight: 700;
+      line-height: 18px;
+      color: $black_text;
+
+      a {
+        color: $blue;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .block-field-blocknodecontactsfield-orar-de-lucru {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 45px;
+    font-size: 14px;
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      content: '\f017';
+      font-family: 'Font Awesome 5 Free', serif;
+      font-weight: 900;
+      color: $blue;
+    }
+
+    .field__label {
+      width: 100%;
+      display: flex;
+      margin-bottom: 10px;
+      color: $black_text;
+    }
+
+    .field__item {
+      width: 100px;
+      font-weight: 700;
+      line-height: 18px;
+      color: $black_text;
+    }
+  }
+
+  .block-field-blocknodecontactsfield-locatia {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    margin-top: 80px;
+    width: 100%;
+    font-family: 'Trajan Pro Bold', sans-serif;
+
+    .field__label {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 26px;
+      color: $black_text;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .node--type-contacts {
+    .block-field-blocknodecontactsfield-adresa, .block-field-blocknodecontactsfield-telefon,
+    .block-field-blocknodecontactsfield-fax, .block-field-blocknodecontactsfield-email,
+    .block-field-blocknodecontactsfield-orar-de-lucru {
+      font-size: 12px;
+      padding-left: 30px;
+    }
+
+    .block-field-blocknodecontactsfield-title {
+      font-size: 22px;
+    }
+
+    .block-field-blocknodecontactsfield-title {
+      text-align: start;
+    }
+
+    .block-field-blocknodecontactsfield-locatia {
+      .field__label {
+        font-size: 22px;
+      }
+
+      .field__item {
+        height: 450px;
+
+        iframe {
+          height: 450px;
+        }
+      }
+    }
+  }
+
+}
+
+@include media-breakpoint-down(md) {
+  .node--type-contacts {
+    .layout--threecol-section {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+
+    .layout__region--second {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      display: block;
+      width: 100%;
+    }
+
+    .block-field-blocknodecontactsfield-title {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      font-size: 24px;
+    }
+
+    .block-field-blocknodecontactsfield-orar-de-lucru {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 6;
+      grid-row-end: 7;
+      margin-top: 40px;
+    }
+
+    .block-field-blocknodecontactsfield-locatia {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 7;
+      grid-row-end: 8;
+
+      .field__label {
+        font-size: 24px;
+      }
+
+      .field__item {
+        position: relative;
+        height: 250px;
+
+        iframe {
+          position: absolute;
+          height: 250px;
+          width: 100%;
+          padding: 0;
+          border-width: 0;
+          margin: 0;
+          left: 0;
+          top: 0;
+          touch-action: pan-x pan-y;
+        }
+      }
+    }
+  }
+}

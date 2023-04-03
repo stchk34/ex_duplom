@@ -1,0 +1,10 @@
+uuid: 6bd12114-e5c3-4b6d-a72b-a257bc9bc6a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.rss_teaser
+label: 'Rss teaser'
+targetEntityType: node
+cache: true

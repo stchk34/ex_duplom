@@ -1,0 +1,35 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Застосувати
+          reset_button_label: Скинути
+          exposed_sorts_label: 'Сортувати за'
+          sort_asc_label: 'За зростанням'
+          sort_desc_label: 'За спаданням'
+          text_input_required: 'Виберіть будь-який фільтр і натисніть «Застосувати», щоб переглянути результати'
+      empty:
+        area:
+          content:
+            value: "<p>За вашим запитом нічого не знайдено.</p>\r\n"
+            format: basic_html
+      filters:
+        type:
+          expose:
+            label: 'Що шукаєте?'
+        created:
+          expose:
+            label: Від
+            placeholder: 'Початкова дата'
+        created_1:
+          expose:
+            label: До
+            placeholder: 'Кінцева дата'
+        search_api_fulltext:
+          expose:
+            placeholder: Пошук
+      sorts:
+        created:
+          expose:
+            label: Опубліковано

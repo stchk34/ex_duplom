@@ -1,0 +1,82 @@
+uuid: e5757ab0-9ce1-41b4-9839-8d6244416c02
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.sl
+    - image.style.slider_1200x
+  theme:
+    - moldova
+id: home_page_news_slider
+label: 'Home page news slider'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - slider_1200x
+    breakpoint_id: moldova.xl
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - slider_1200x
+    breakpoint_id: moldova.lg
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 500px
+      sizes_image_styles:
+        - slider_1200x
+    breakpoint_id: moldova.md
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 500px
+      sizes_image_styles:
+        - slider_1200x
+    breakpoint_id: moldova.md
+    multiplier: 2x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 300px
+      sizes_image_styles:
+        - sl
+        - slider_1200x
+    breakpoint_id: moldova.sm
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 300px
+      sizes_image_styles:
+        - sl
+        - slider_1200x
+    breakpoint_id: moldova.sm
+    multiplier: 2x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 200px
+      sizes_image_styles:
+        - sl
+        - slider_1200x
+    breakpoint_id: moldova.xs
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 200px
+      sizes_image_styles:
+        - sl
+        - slider_1200x
+    breakpoint_id: moldova.xs
+    multiplier: 2x
+breakpoint_group: moldova
+fallback_image_style: slider_1200x

@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: o1wWkhSOJotsHFgvzESaUOiTWhLak62cKBDyEtewAIM
+langcode: ro
+role_to_select:
+  commentator: commentator
+  content_editor: '0'
+  administrator: '0'
+registration_mode: admin

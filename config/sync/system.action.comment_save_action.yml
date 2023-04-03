@@ -1,0 +1,13 @@
+uuid: f05997db-901a-4041-975f-f56c341d466f
+langcode: ro
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: lfyE_snmvfg_EQ3VDyhUtGAXgmqtEiqa46I3bTMg8DU
+id: comment_save_action
+label: 'Salvare comentariu'
+type: comment
+plugin: 'entity:save_action:comment'
+configuration: {  }

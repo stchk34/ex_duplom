@@ -1,0 +1,18 @@
+uuid: 8d4c1827-79d1-4ede-8b15-5da546555723
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.galerie_photo_gueue
+id: entity_subqueue.galerie_photo_gueue.created
+field_name: created
+entity_type: entity_subqueue
+bundle: galerie_photo_gueue
+label: 'Authored on'
+description: 'The time that the subqueue was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

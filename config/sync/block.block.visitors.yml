@@ -1,0 +1,20 @@
+uuid: a2da4f6d-4724-44c9-9a94-ab2b6b77722d
+langcode: en
+status: true
+dependencies:
+  module:
+    - visitors
+  theme:
+    - moldova
+id: visitors
+theme: moldova
+region: footer_third
+weight: 0
+provider: null
+plugin: visitors_block
+settings:
+  id: visitors_block
+  label: Відвідувачів
+  label_display: '0'
+  provider: visitors
+visibility: {  }

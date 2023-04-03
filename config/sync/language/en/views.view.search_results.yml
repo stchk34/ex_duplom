@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      title: 'Search results'
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Search
+      empty:
+        area:
+          content:
+            value: "<p>No search results for your request.</p>\r\n"
+            format: basic_html

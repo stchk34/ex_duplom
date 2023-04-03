@@ -1,0 +1,18 @@
+uuid: c6a203c5-348a-4764-a1a0-f870d161ed9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.news_queue_
+id: entity_subqueue.news_queue_.created
+field_name: created
+entity_type: entity_subqueue
+bundle: news_queue_
+label: 'Authored on'
+description: 'The time that the subqueue was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

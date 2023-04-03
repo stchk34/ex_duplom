@@ -1,0 +1,13 @@
+uuid: 4e8c124b-c57d-4e42-a157-77bf5dd3ef04
+langcode: ro
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: C00dyL_W_5M0nFlgUB3lWUTUs96jn51Jw1MLHVEHZD0
+id: comment_publish_action
+label: 'Publicare comentariu'
+type: comment
+plugin: 'entity:publish_action:comment'
+configuration: {  }

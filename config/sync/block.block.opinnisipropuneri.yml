@@ -1,0 +1,30 @@
+uuid: e6c516b3-2b10-41ac-b739-897aa8e899de
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:a3bd4e2f-413c-4fcf-a4e9-ae2e600eb362'
+  module:
+    - block_content
+    - system
+  theme:
+    - moldova
+id: opinnisipropuneri
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:a3bd4e2f-413c-4fcf-a4e9-ae2e600eb362'
+settings:
+  id: 'block_content:a3bd4e2f-413c-4fcf-a4e9-ae2e600eb362'
+  label: 'Opinions and proposals'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /opinii-si-propuneri

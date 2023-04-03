@@ -1,0 +1,13 @@
+uuid: 9e7d42b5-508f-4091-a86a-8c77fc21d8a4
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: N0RDBTqiK4dKoN4p4oW2j0SGWycdHyALUe9M-Ofp89U
+id: node_promote_action
+label: 'Promovare conținut pe prima pagină'
+type: node
+plugin: node_promote_action
+configuration: {  }

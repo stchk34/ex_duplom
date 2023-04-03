@@ -1,0 +1,25 @@
+uuid: 2ad98811-c1c4-4baf-a13c-4f3208fd5f77
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bf20eaef-6f3e-43ff-8ffb-9fb31cdd758c'
+  module:
+    - block_content
+  theme:
+    - moldova
+id: menuaccessibility
+theme: moldova
+region: accessibility_menu
+weight: -22
+provider: null
+plugin: 'block_content:bf20eaef-6f3e-43ff-8ffb-9fb31cdd758c'
+settings:
+  id: 'block_content:bf20eaef-6f3e-43ff-8ffb-9fb31cdd758c'
+  label: 'Меню доступності'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

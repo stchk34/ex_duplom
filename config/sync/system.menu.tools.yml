@@ -1,0 +1,10 @@
+uuid: e9b36a5d-75b2-4eba-a6f5-3db398d96a44
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
+id: tools
+label: Instrumente
+description: 'Legături către unelte de utilizator, deseori adăugate de module'
+locked: true

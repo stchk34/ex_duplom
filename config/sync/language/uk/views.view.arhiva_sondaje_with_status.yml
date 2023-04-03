@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      fields:
+        status:
+          settings:
+            format_custom_false: '<p class="poll-card--status-inactive">Неактивне</p>'
+            format_custom_true: '<p class="poll-card--status-active">Активне</p>'

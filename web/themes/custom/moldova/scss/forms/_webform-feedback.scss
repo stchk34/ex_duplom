@@ -1,0 +1,585 @@
+.block-field-blocknodeformtitle {
+  font-size: 26px;
+  text-align: start;
+
+  .field--name-field-title {
+    text-transform: uppercase;
+    color: $black_text;
+    font-family: 'Trajan Pro Bold', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.webform-submission-feedback-form {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+  grid-row-gap: 20px;
+  background-color: #f5f5f5;
+  padding: 40px;
+  color: #222;
+
+  label {
+    font-size: 15px;
+    font-weight: 300;
+    color: $black_text;
+  }
+
+  [data-drupal-selector="edit-cimpurile-marcate-cu-sunt-obligatorii-"] {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .form-required::after {
+    background-image: url(../images/form/required.png);
+  }
+
+  [data-drupal-messages] {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    .alert {
+      margin: 0;
+    }
+  }
+
+  .js-form-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .webform-type-webform-name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0;
+
+    .fieldset-wrapper {
+      display: grid;
+      grid-template-columns: 48% 48%;
+      grid-column-gap: 4%;
+
+      .form-item-nume-and-prenume-first {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin: 0;
+      }
+
+      .form-item-nume-and-prenume-last {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin: 0;
+      }
+
+      input {
+        width: 100%;
+        padding: 4% 6%;
+        @include form-input;
+      }
+    }
+  }
+
+  .form-item-email {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    input {
+      width: 100%;
+      padding: 4% 6%;
+      @include form-input;
+    }
+  }
+
+  .form-item-telefon {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    .iti--allow-dropdown {
+      display: grid;
+      grid-template-columns: 22% 74%;
+      grid-column-gap: 4%;
+      width: 100%;
+      padding: 4.2% 6%;
+      margin: 3px 0 0;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 300;
+      color: #222;
+      background: #fff;
+      border: 1px solid #f0f0f0;
+      border-radius: 5px;
+
+      .iti__flag-container {
+        position: static;
+        width: 100%;
+      }
+
+      .iti__selected-flag {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+      }
+
+      input {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: none;
+        color: #222;
+        font-size: 15px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: none;
+        outline: 0;
+        appearance: none;
+        line-height: 18px;
+      }
+    }
+
+    .form-item--error-message {
+      margin: 5px 0 0 2px;
+      font-size: 14px;
+    }
+  }
+
+  .form-item-denumirea-instituei {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    input {
+      width: 100%;
+      padding: 2% 3%;
+      @include form-input;
+    }
+  }
+
+  .form-item-scopul-vizitei {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    .form-select {
+      width: 100%;
+      padding: 4% 6%;
+      background-image: url(../images/arrows/black-arrow.png);
+      background-size: 12px;
+      background-repeat: no-repeat;
+      background-position: right 5% bottom 50%;
+      @include form-input;
+
+      & :nth-child(1) {
+        display: none;
+      }
+    }
+  }
+
+  .form-item-alege-data {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    .form-select {
+      width: 100%;
+      padding: 4% 6%;
+      background-image: url(../images/arrows/black-arrow.png);
+      background-size: 12px;
+      background-repeat: no-repeat;
+      background-position: right 5% bottom 50%;
+      @include form-input;
+
+      & :nth-child(1) {
+        display: none;
+        color: transparent;
+      }
+    }
+  }
+
+  .form-item-scopul-viziteii {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    .form-textarea-wrapper {
+      width: 100%;
+
+      .form-textarea {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2% 3%;
+        @include form-input;
+      }
+    }
+  }
+
+  .form-actions {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    .form-submit {
+      @include form-btn;
+      margin-top: 30px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .webform-submission-feedback-form .form-item-telefon .iti--allow-dropdown {
+    grid-template-columns: 24% 70%;
+    grid-column-gap: 6%;
+
+    input {
+      font-size: 12px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .webform-submission-feedback-form {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    padding: 30px;
+
+    [data-drupal-messages] {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .webform-type-webform-name {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+      .fieldset-wrapper {
+        grid-template-columns: 100%;
+        grid-row-gap: 20px;
+
+        .form-item-nume-and-prenume-first {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 2;
+
+        }
+
+        .form-item-nume-and-prenume-last {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        input {
+          padding: 3% 4%;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .form-item-email {
+      grid-row-start: 3;
+      grid-row-end: 4;
+
+      input {
+        padding: 3% 4%;
+        font-size: 12px;
+      }
+    }
+
+    .form-item-telefon {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+
+      .iti--allow-dropdown {
+        padding: 3% 4%;
+
+        input {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .form-item-denumirea-instituei {
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      input {
+        padding: 3% 4%;
+        font-size: 12px;
+      }
+    }
+
+    .form-item-alege-data {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 6;
+      grid-row-end: 7;
+    }
+
+    .form-actions {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 9;
+      grid-row-end: 10;
+
+      .form-submit {
+        margin-top: 30px;
+        width: 180px;
+        font-size: 12px;
+        padding: 3% 4%;
+      }
+    }
+
+    .form-item-scopul-viziteii {
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      .form-textarea-wrapper .form-textarea {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+
+    label {
+      font-size: 12px;
+    }
+
+    .form-item-telefon {
+      .iti--allow-dropdown {
+        grid-template-columns: 15% 80%;
+        grid-column-gap: 5%;
+
+        input {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .form-item-scopul-vizitei, .form-item-alege-data {
+      .form-select {
+        background-size: 10px;
+        background-position: right 6% bottom 50%;
+        font-size: 12px;
+        padding: 3% 4%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .webform-submission-feedback-form {
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+
+    .webform-type-webform-name {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+      .fieldset-wrapper {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 4%;
+
+        .form-item-nume-and-prenume-first {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .form-item-nume-and-prenume-last {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+      }
+    }
+
+    .form-item-email {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    .form-item-telefon {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+
+      .iti--allow-dropdown {
+        grid-template-columns: 19% 77%;
+        grid-column-gap: 4%;
+        font-size: 16px;
+
+        .iti__flag-container {
+          position: static;
+          width: 100%;
+        }
+      }
+    }
+
+    .form-item-denumirea-instituei {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+
+    .form-item-scopul-vizitei {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+
+    .form-item-alege-data {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+
+    .form-item-scopul-viziteii {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: 7;
+    }
+
+    .form-actions {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 7;
+      grid-row-end: 8;
+
+      .form-submit {
+        @include form-btn;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .webform-submission-feedback-form {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    padding: 30px;
+
+    [data-drupal-messages] {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .webform-type-webform-name {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+      .fieldset-wrapper {
+        grid-template-columns: 100%;
+        grid-row-gap: 20px;
+
+        .form-item-nume-and-prenume-first {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .form-item-nume-and-prenume-last {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        input {
+          padding: 2% 4%;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .form-item-email {
+      grid-row-start: 3;
+      grid-row-end: 4;
+
+      input {
+        padding: 2% 4%;
+        font-size: 14px;
+      }
+    }
+
+    .form-item-telefon {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+
+      .iti--allow-dropdown {
+        padding: 2% 4%;
+
+        input {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .form-item-denumirea-instituei {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 6;
+
+      input {
+        padding: 2% 4%;
+        font-size: 14px;
+      }
+    }
+
+    .form-item-scopul-vizitei {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 6;
+      grid-row-end: 7;
+    }
+
+    .form-item-alege-data {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 7;
+      grid-row-end: 8;
+    }
+
+    .form-item-scopul-viziteii {
+      grid-row-start: 8;
+      grid-row-end: 9;
+    }
+
+    .form-actions {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 9;
+      grid-row-end: 10;
+
+      .form-submit {
+        margin-top: 30px;
+        width: 160px;
+      }
+    }
+  }
+}

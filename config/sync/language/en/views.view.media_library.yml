@@ -1,0 +1,61 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      sorts:
+        created:
+          expose:
+            label: 'Cele noi primele'
+      filters:
+        status:
+          expose:
+            label: 'Statusul publicării'
+          group_info:
+            group_items:
+              2:
+                title: Nepublicat
+  page:
+    display_title: Page
+    display_options:
+      fields:
+        edit_media:
+          text: Edit
+        delete_media:
+          text: Delete
+  widget:
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: All
+      header:
+        display_link_grid:
+          label: Grilă
+  widget_table:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Miniatură
+        uid:
+          label: Autor
+        changed:
+          label: Actualizat
+      arguments:
+        bundle:
+          exception:
+            title: All
+      header:
+        display_link_grid:
+          label: Grilă

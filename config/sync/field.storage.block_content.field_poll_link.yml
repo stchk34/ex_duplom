@@ -1,0 +1,19 @@
+uuid: b3e40c1b-f791-4ffb-b78a-751534b836e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.field_poll_link
+field_name: field_poll_link
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

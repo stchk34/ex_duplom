@@ -1,0 +1,29 @@
+uuid: 40736d52-12a6-4f34-9aea-fba9c7bffd7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_select_new
+    - node.type.home_page_news_slider
+    - node.type.news
+id: node.home_page_news_slider.field_select_new
+field_name: field_select_new
+entity_type: node
+bundle: home_page_news_slider
+label: 'Select news'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: home_page_news_slider
+field_type: entity_reference

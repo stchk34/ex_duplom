@@ -1,0 +1,14 @@
+uuid: 5be52a14-6765-4c01-93b4-fc0bd11c61be
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: url_moldova
+label: 'Url moldova'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

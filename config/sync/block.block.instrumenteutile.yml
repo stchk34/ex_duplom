@@ -1,0 +1,33 @@
+uuid: 8fc39db1-f740-4608-bf46-74c77f83d744
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:d90b11e4-8c9d-4699-bc62-3c571ca96607'
+  module:
+    - block_content
+    - node
+  theme:
+    - moldova
+id: instrumenteutile
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:d90b11e4-8c9d-4699-bc62-3c571ca96607'
+settings:
+  id: 'block_content:d90b11e4-8c9d-4699-bc62-3c571ca96607'
+  label: 'Useful tools'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      useful_tools: useful_tools

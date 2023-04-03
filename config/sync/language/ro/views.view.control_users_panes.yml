@@ -1,0 +1,22 @@
+display:
+  default:
+    display_title: Expert
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Absteigend
+      fields:
+        name:
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        edit_user:
+          text: modifică
+  pane_tc_new_users:
+    display_options:
+      block_category: 'Tablou de bord'

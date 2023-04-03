@@ -1,0 +1,15 @@
+uuid: d9402f43-d963-428f-9572-e57d5e4d4ae0
+langcode: en
+status: true
+dependencies: {  }
+name: extra_small
+label: 'Extra small (75×75)'
+effects:
+  af853726-7342-49fd-8d04-d94b5f984c96:
+    uuid: af853726-7342-49fd-8d04-d94b5f984c96
+    id: image_scale
+    weight: 1
+    data:
+      width: 75
+      height: 75
+      upscale: false

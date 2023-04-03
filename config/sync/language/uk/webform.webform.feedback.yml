@@ -1,0 +1,43 @@
+title: 'Заплануйте візит'
+elements: |
+  cimpurile_marcate_cu_sunt_obligatorii_:
+    '#title': 'Поля, позначені *, обов''язкові для заповнення.'
+  nume_and_prenume:
+    '#title': 'Ім''я та прізвище'
+    '#title__title': 'Ім''я та прізвище'
+    '#first__title': 'Ім''я'
+    '#last__title': Прізвище
+    '#middle__title': Середній
+    '#suffix__title': Суфікс
+    '#degree__title': Ступінь
+  email:
+    '#title': 'Електронна пошта'
+    '#required_error': 'Необхідно вказати адресу електронної пошти.'
+  telefon:
+    '#title': Телефон
+  denumirea_instituei:
+    '#title': 'Назва закладу'
+    '#required_error': 'Необхідно вказати назву установи.'
+  scopul_vizitei:
+    '#title': 'Тема візиту'
+    '#options':
+      COVID-19: 'Профілактичні заходи проти поширення COVID-19'
+      'The new president': 'Новий президент'
+      'Work in the parliament': 'Робота в парламенті'
+    '#required_error': 'Тема візиту обов''язкова .'
+  alege_data:
+    '#title': 'Виберіть дату'
+    '#required_error': 'Необхідно вибрати дату.'
+  scopul_viziteii:
+    '#title': 'Мета візиту'
+    '#required_error': 'Необхідно вказати мету візиту.'
+  actions:
+    '#title': 'Кнопка(и) Надіслати'
+    '#submit__label': Відправити
+handlers:
+  email:
+    label: 'Електронна пошта'
+    settings:
+      body: "Відвідувач запланував візит.<br />\r\n[webform_submission:values]"
+settings:
+  confirmation_message: 'Ваша форма була відправлена.'

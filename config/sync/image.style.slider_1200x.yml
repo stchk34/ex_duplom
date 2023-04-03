@@ -1,0 +1,15 @@
+uuid: 22938465-cda2-42a9-973f-baf4dd30ae85
+langcode: en
+status: true
+dependencies: {  }
+name: slider_1200x
+label: 'Slider (1100x550)'
+effects:
+  04bbe515-18ec-4d7c-aeed-aa89b9fa1358:
+    uuid: 04bbe515-18ec-4d7c-aeed-aa89b9fa1358
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1100
+      height: 550
+      anchor: center-center

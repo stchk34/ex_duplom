@@ -1,0 +1,18 @@
+uuid: c068fba9-246c-49f4-b377-fe03e7744548
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.position_information_blocks
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.position_information_blocks
+target_entity_type_id: taxonomy_term
+target_bundle: position_information_blocks
+default_langcode: current_interface
+language_alterable: true

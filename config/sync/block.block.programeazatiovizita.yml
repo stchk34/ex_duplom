@@ -1,0 +1,30 @@
+uuid: 6753b736-55ea-43d7-8220-604f5083f852
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:fabed376-8448-4b22-b1a9-9f8bb3539645'
+  module:
+    - block_content
+    - system
+  theme:
+    - moldova
+id: programeazatiovizita
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:fabed376-8448-4b22-b1a9-9f8bb3539645'
+settings:
+  id: 'block_content:fabed376-8448-4b22-b1a9-9f8bb3539645'
+  label: 'Schedule a visit'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /programeaza-ti-o-vizita

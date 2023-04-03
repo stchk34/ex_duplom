@@ -1,0 +1,14 @@
+uuid: 35ec5e8f-2872-4bb2-860f-e4e0b2d52ac8
+langcode: ro
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: adQ16YGDPk7QfUKrfrC35o2sKdHEozdNtdpiH7CftQQ
+id: country_codes
+label: 'Country codes'
+category: Geographic
+likert: false
+options: ''

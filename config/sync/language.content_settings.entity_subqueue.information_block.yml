@@ -1,0 +1,18 @@
+uuid: 5fedb3c3-1edb-40ef-9c39-8d7a4777796b
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.information_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.information_block
+target_entity_type_id: entity_subqueue
+target_bundle: information_block
+default_langcode: site_default
+language_alterable: true

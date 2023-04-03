@@ -1,0 +1,33 @@
+uuid: d15afc70-80ac-460e-857d-0b1e306f22d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comment_example
+    - node.type.photo_gallery
+  module:
+    - comment
+id: node.photo_gallery.field_comment_example
+field_name: field_comment_example
+entity_type: node
+bundle: photo_gallery
+label: Comments
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 0
+field_type: comment

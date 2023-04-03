@@ -1,0 +1,19 @@
+uuid: 03e04c58-700e-444c-be8f-17e9b3d2d06b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.poll_block
+    - field.storage.block_content.field_title_block_sondaj
+id: block_content.poll_block.field_title_block_sondaj
+field_name: field_title_block_sondaj
+entity_type: block_content
+bundle: poll_block
+label: 'Title block sondaj'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

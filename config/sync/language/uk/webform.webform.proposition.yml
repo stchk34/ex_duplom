@@ -1,0 +1,22 @@
+title: Пропозиції
+elements: |
+  title:
+    '#title': 'Поля, позначені *, обов''язкові для заповнення.'
+  name:
+    '#first__title': 'Ім''я'
+  surname:
+    '#first__title': Прізвище
+  email:
+    '#title': 'Електронна адреса'
+  telefon:
+    '#title': Телефон
+  opinion:
+    '#title': 'Ваша думка'
+  proposition:
+    '#title': Пропозиція
+  actions:
+    '#submit__label': Надіслати
+handlers:
+  email:
+    settings:
+      body: "Відвідувач подав нову пропозицію.<br />\r\n[webform_submission:values]"

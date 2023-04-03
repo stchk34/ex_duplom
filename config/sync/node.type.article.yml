@@ -1,0 +1,13 @@
+uuid: 64efadf2-8e5e-476a-a466-8a7fdd030296
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
+name: Articol
+type: article
+description: 'Folosiți <em>articole</em> pentru conținut dependent de timp, cum ar fi știri, comunicate de presă sau articole de blog.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,26 @@
+uuid: 96765eaa-f630-4466-b2b1-0eb6a3bdf8ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.poll_block
+    - field.storage.block_content.field_poll_body
+id: block_content.poll_block.field_poll_body
+field_name: field_poll_body
+entity_type: block_content
+bundle: poll_block
+label: 'Poll body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:poll'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: d5380391-b25c-48a9-8b54-d7eb2159109b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: video_gallery
+label: 'Video gallery '
+type: 'canonical_entities:node'
+pattern: '/galerie-video/[node:title]'
+selection_criteria:
+  7c4ffe12-161f-4ab6-b7f5-d463f707fde1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 7c4ffe12-161f-4ab6-b7f5-d463f707fde1
+    context_mapping:
+      node: node
+    bundles:
+      video_gallery: video_gallery
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,18 @@
+uuid: a3375fd2-694d-48e8-8a32-84727e71c4a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.galerie_photo_gueue
+id: entity_subqueue.galerie_photo_gueue.changed
+field_name: changed
+entity_type: entity_subqueue
+bundle: galerie_photo_gueue
+label: Changed
+description: 'The time that the subqueue was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

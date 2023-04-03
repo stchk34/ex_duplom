@@ -1,0 +1,64 @@
+uuid: 0e38b433-727e-47c1-b35a-0ae996359165
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform_workflows_element
+id: approve_petition
+label: 'Approve petition'
+type: webform_workflows_element
+type_settings:
+  initial_state: in_process
+  states:
+    a:
+      label: 'Admin approved'
+      weight: 4
+    admin_approve_or_disapprove:
+      label: 'Admin disapproved'
+      weight: 3
+    in_process:
+      label: 'In process'
+      weight: 0
+    m:
+      label: 'Manager approved'
+      weight: 2
+    manager_disapprove:
+      label: 'Manager disapproved'
+      weight: 1
+  transitions:
+    approv:
+      label: Approve
+      from:
+        - m
+      to: a
+      weight: 2
+    approve:
+      label: Approve
+      from:
+        - in_process
+      to: m
+      weight: -1
+    disapprov:
+      label: Disapprove
+      from:
+        - m
+      to: admin_approve_or_disapprove
+      weight: 0
+    disapprove:
+      label: Disapprove
+      from:
+        - in_process
+      to: manager_disapprove
+      weight: -3
+    disapproved:
+      label: Disapprove
+      from:
+        - admin_approve_or_disapprove
+      to: m
+      weight: 1
+    in_process:
+      label: 'In process'
+      from:
+        - manager_disapprove
+      to: in_process
+      weight: -2

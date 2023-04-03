@@ -1,0 +1,172 @@
+uuid: a548e74d-531a-42ff-8308-2b9c41678e33
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.reports.field_date
+    - field.field.node.reports.field_document
+    - field.field.node.reports.field_year_term
+    - field.field.node.reports.layout_builder__layout
+    - node.type.reports
+    - views.view.useful_section
+  content:
+    - 'block_content:sidebar:823d784b-5a52-4ce5-a9e0-73d01b467bc8'
+  module:
+    - block_content
+    - datetime
+    - layout_builder
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          d2dff3bf-19cb-47fe-a6c7-cc08de3e4ae3:
+            uuid: d2dff3bf-19cb-47fe-a6c7-cc08de3e4ae3
+            region: first
+            configuration:
+              id: 'block_content:823d784b-5a52-4ce5-a9e0-73d01b467bc8'
+              label: Sidebar
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
+          c16e327a-e359-40d5-bb37-3d4ddaf3ade6:
+            uuid: c16e327a-e359-40d5-bb37-3d4ddaf3ade6
+            region: second
+            configuration:
+              id: 'extra_field_block:node:reports:content_moderation_control'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 6
+            additional: {  }
+          72691ec9-558b-4a7d-b4ce-819731e116c0:
+            uuid: 72691ec9-558b-4a7d-b4ce-819731e116c0
+            region: third
+            configuration:
+              id: 'views_block:useful_section-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          5b2b0106-0842-4d9d-ab0d-e193b5859bea:
+            uuid: 5b2b0106-0842-4d9d-ab0d-e193b5859bea
+            region: second
+            configuration:
+              id: 'field_block:node:reports:field_year_term'
+              label: Year
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          53aef70f-5268-431a-9841-a3415dfc0d8f:
+            uuid: 53aef70f-5268-431a-9841-a3415dfc0d8f
+            region: second
+            configuration:
+              id: 'field_block:node:reports:field_date'
+              label: Date
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: Europe/Kiev
+                  format_type: short
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          97ae3df7-116b-49d0-9a64-db9854d4e16d:
+            uuid: 97ae3df7-116b-49d0-9a64-db9854d4e16d
+            region: second
+            configuration:
+              id: 'field_block:node:reports:field_document'
+              label: Document
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+        third_party_settings: {  }
+id: node.reports.full
+targetEntityType: node
+bundle: reports
+mode: full
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: second
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_document:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_year_term:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

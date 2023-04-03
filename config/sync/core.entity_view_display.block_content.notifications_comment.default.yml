@@ -1,0 +1,26 @@
+uuid: 21c820dd-4c7e-4d16-8682-8295aa72d93c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.notifications_comment
+    - field.field.block_content.notifications_comment.field_text_notifications
+id: block_content.notifications_comment.default
+targetEntityType: block_content
+bundle: notifications_comment
+mode: default
+content:
+  field_text_notifications:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

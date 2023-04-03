@@ -1,0 +1,23 @@
+uuid: 4da8eb3b-66f2-4ce0-9040-ca297166138b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.polls_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.polls_block.body
+field_name: body
+entity_type: block_content
+bundle: polls_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

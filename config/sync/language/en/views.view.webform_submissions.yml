@@ -1,0 +1,80 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            first: '« Primul'
+            last: 'Ultimul »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        created:
+          label: Created
+        remote_addr:
+          label: 'Adresă IP'
+        view_webform_submission:
+          label: Operaţii
+      header:
+        result:
+          content: 'Afișare @start - @end din @total'
+      arguments:
+        in_draft:
+          exception:
+            title: All
+  embed_administer:
+    display_options:
+      fields:
+        sticky:
+          label: Lipicios
+        created:
+          label: Created
+        remote_addr:
+          label: 'Adresă IP'
+        operations:
+          label: Operaţii
+      filters:
+        sticky:
+          expose:
+            label: Lipicios
+  embed_manage:
+    display_options:
+      fields:
+        sticky:
+          label: Lipicios
+        created:
+          label: Created
+        remote_addr:
+          label: 'Adresă IP'
+        view_webform_submission:
+          label: Operaţii
+        edit_webform_submission:
+          label: Operaţii
+      filters:
+        sticky:
+          expose:
+            label: Lipicios
+  embed_review:
+    display_options:
+      fields:
+        sticky:
+          label: Lipicios
+        created:
+          label: Created
+        remote_addr:
+          label: 'Adresă IP'
+        view_webform_submission:
+          label: Operaţii
+      filters:
+        sticky:
+          expose:
+            label: Lipicios

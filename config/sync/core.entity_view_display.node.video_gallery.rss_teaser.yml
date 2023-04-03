@@ -1,0 +1,50 @@
+uuid: 3972f1d4-ea3d-4889-b3bc-b1fadfe844cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss_teaser
+    - field.field.node.video_gallery.field_comment_example
+    - field.field.node.video_gallery.field_date
+    - field.field.node.video_gallery.field_media_video
+    - node.type.video_gallery
+  module:
+    - datetime
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.video_gallery.rss_teaser
+targetEntityType: node
+bundle: video_gallery
+mode: rss_teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_comment_example: true
+  field_media_video: true
+  langcode: true
+  search_api_excerpt: true

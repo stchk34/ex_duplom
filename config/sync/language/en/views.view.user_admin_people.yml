@@ -1,0 +1,43 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      fields:
+        user_bulk_form:
+          label: 'Actualizare în masă'
+        status:
+          settings:
+            format_custom_true: Active
+        created:
+          label: 'Membru înregistrat de'
+        operations:
+          label: Operaţii
+      pager:
+        options:
+          tags:
+            next: 'Următor ›'
+            previous: '‹ Anterior'
+            first: '« Primul'
+            last: 'Ultimul »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        combine:
+          expose:
+            label: 'Numele sau emailul conține'
+        status:
+          group_info:
+            group_items:
+              1:
+                title: Active
+      use_more_text: 'mai multe'
+  page_1:
+    display_title: Page

@@ -1,0 +1,22 @@
+uuid: 992de720-ba85-4fac-a5a3-b93965ef8690
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: reports
+label: Reports
+type: 'canonical_entities:node'
+pattern: '/rapoarte-financiare/[node:title]'
+selection_criteria:
+  1b7b935c-f671-40f8-8917-c7459d127088:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1b7b935c-f671-40f8-8917-c7459d127088
+    context_mapping:
+      node: node
+    bundles:
+      reports: reports
+selection_logic: and
+weight: -5
+relationships: {  }

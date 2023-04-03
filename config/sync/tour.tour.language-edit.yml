@@ -1,0 +1,48 @@
+uuid: 624c55af-fa56-463a-be94-fa2b2a80b776
+langcode: ro
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: gjYvYwMqulNsq7VmScWKOqEUxar9AX0TvG8vfCCguUQ
+id: language-edit
+label: 'Editarea limbilor'
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.edit_form
+tips:
+  language-edit-overview:
+    id: language-edit-overview
+    plugin: text
+    label: 'Editarea limbilor'
+    weight: 1
+    body: '<p>Această pagină oferă posibilitatea de a edita o limbă pe situl dumneavoastră, inclusiv limbile personalizate.</p>'
+  language-edit-langcode:
+    id: language-edit-langcode
+    plugin: text
+    label: 'Codul limbii'
+    weight: 2
+    selector: '#edit-langcode-view'
+    body: '<p>Nu puteți schimba codul unei limbi pe site, cât acesta este folosit în sistemul de urmărire a limbii.</p>'
+  language-edit-label:
+    id: language-edit-label
+    plugin: text
+    label: 'Numele limbii'
+    weight: 3
+    selector: '#edit-label'
+    body: '<p>Numele limbii este folosit peste tot în sit pentru toți utilizatorii și este scris în limba engleză. Numele limbilor de bază poate fi tradus cu ajutorul modulului Traducerea Interfeței, și numele atât cele de bază cât si cele personalizate poate fi tradus cu ajutorul modulului Configurarea traducerii.</p>'
+  language-edit-direction:
+    id: language-edit-direction
+    plugin: text
+    label: 'Direcția limbii'
+    weight: 4
+    selector: '#edit-direction--wrapper--description'
+    body: '<p>Alegeți dacă limba este o limbă "de la stânga la dreapta" sau "de la dreapta la stânga".</p><p>Rețineți că nu toate temele suportă formatul "de la dreapta la stânga", prin urmare  testați-vă tema dacă utilizați formatul "de la dreapta la stânga".</p>'
+  language-edit-continue:
+    id: language-edit-continue
+    plugin: text
+    label: 'Continuarea pe'
+    weight: 5
+    body: '<p>Acum, că aveți o privire de ansamblu asupra caracteristicii "Editare limbă", puteți continua cu:<ul><li>Editarea unei limbi</li><li><a href="[site:url]admin/config/regional/language">Vizualizarea limbilor configurate</a></li></ul></p>'

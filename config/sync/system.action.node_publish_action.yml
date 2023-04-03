@@ -1,0 +1,13 @@
+uuid: d3b6a158-02d5-4aba-b35f-d71ddde63f8a
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 2B9uF8NL5gutNKSdPRAhhAsDWFZZG1PJOBmx0aBGd_0
+id: node_publish_action
+label: 'Publicare conţinut'
+type: node
+plugin: 'entity:publish_action:node'
+configuration: {  }

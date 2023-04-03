@@ -1,0 +1,19 @@
+uuid: 98d901c7-c33d-47a0-a001-a6bf15e4defe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orar_de_lucru
+    - node.type.contacts
+id: node.contacts.field_orar_de_lucru
+field_name: field_orar_de_lucru
+entity_type: node
+bundle: contacts
+label: 'Working hours:'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: fa84f84a-fac1-4d99-96f9-730336e95fdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxonomy
+    - node.type.news
+    - taxonomy.vocabulary.noutati
+id: node.news.field_taxonomy
+field_name: field_taxonomy
+entity_type: node
+bundle: news
+label: Taxonomy
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      noutati: noutati
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

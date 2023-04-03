@@ -1,0 +1,14 @@
+label: Contacts
+display:
+  default:
+    display_options:
+      title: Contacts
+      fields:
+        field_adresa:
+          label: Address
+        field_telefon:
+          label: Phone
+        field_orar_de_lucru:
+          label: 'Working hours'
+        field_locatia:
+          label: Location

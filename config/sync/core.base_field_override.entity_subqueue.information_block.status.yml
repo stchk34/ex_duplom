@@ -1,0 +1,22 @@
+uuid: e5f5a9c1-182e-4bb8-b4d1-067afc0d36fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.information_block
+id: entity_subqueue.information_block.status
+field_name: status
+entity_type: entity_subqueue
+bundle: information_block
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

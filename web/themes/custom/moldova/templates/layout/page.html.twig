@@ -1,0 +1,91 @@
+<div class="page">
+  <header role="banner" class="header">
+    <div class="moldova-header-wrapper">
+      <div class="moldova-logo">
+        {{ page.logo }}
+      </div>
+      <div class="moldova-header-body">
+        <div class="moldova-header-top">
+          <div class="moldova-menu-accessibility">
+            {{ page.accessibility_menu }}
+          </div>
+          <div class="moldova-wrapper-header-top">
+            {{ page.header_top }}
+            <button id="search_action" class="search_action" type="button">
+              <div class="animated-icon-search"><i
+                  class="fa-solid fa-magnifying-glass"></i></div>
+            </button>
+          </div>
+        </div>
+        <div class="moldova-header-bottom">
+          {{ page.header_bottom }}
+          <button type="button" class="navbar-toggle collapsed"
+                  data-toggle="collapse" data-target="#navbar-collapse"
+                  aria-controls="navbar-collapse" aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <div class="animated-icon"><span></span><span></span><span></span>
+            </div>
+          </button>
+          <nav class="navbar js-priority-nav">
+            {{ page.primary_menu }}
+          </nav>
+        </div>
+        <div class="moldova-header-bottom-burger">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse" id="navbar-collapse">
+              {{ page.primary_menu }}
+            </div>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  {% if page.highlighted %}
+    <div class="highlighted">
+      <aside class="{{ container }} section clearfix" role="complementary">
+        {{ page.highlighted }}
+      </aside>
+    </div>
+  {% endif %}
+  {{ page.breadcrumb }}
+  {{ page.sidebar_left }}
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    {{ page.content }}
+  </main>
+  {{ page.sidebar_right }}
+  <footer role="contentinfo">
+    <div class="footer-wrapper">
+      <div class="footer-block-logo">
+        {{ page.footer_first }}
+      </div>
+      <div class="footer-block-info">
+        <div class="footer-section-phone">
+          {{ page.footer_second }}
+        </div>
+        <div class="footer-section-address">
+          {{ page.footer_third }}
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+  crossorigin="anonymous"></script>
+<script>(function (d) {
+    var s = d.createElement("script");
+    s.setAttribute("data-account", "oqkaS1dBRZ");
+    s.setAttribute("src", "https://cdn.userway.org/widget.js");
+    (d.body || d.head).appendChild(s);
+  })(document)</script>
+

@@ -1,0 +1,7 @@
+label: 'Revizuirea comentariilor'
+display:
+  default:
+    display_options:
+      title: 'Revizuirea comentariilor'
+      fields:
+        delete_comment: {  }

@@ -1,0 +1,34 @@
+uuid: 9881f423-19fd-40a1-821c-a6b7c9fc635c
+langcode: ro
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: vcDd9H0uIlyOQGoVAJuD3ADMnQeRR_X3B-ojyb8Cbnc
+id: language-add
+label: 'Adăugare limbi'
+module: language
+routes:
+  -
+    route_name: language.add
+tips:
+  language-add-overview:
+    id: language-add-overview
+    plugin: text
+    label: 'Adăugare limbi'
+    weight: 1
+    body: '<p>Această pagină oferă posibilitatea de a adăuga limbi comune sitului dumneavoastră.</p><p>Dacă limba dorită nu este disponibilă, puteți adăuga o limbă personalizată.</p>'
+  language-add-choose:
+    id: language-add-choose
+    plugin: text
+    label: 'Selectaţi limba'
+    weight: 2
+    selector: '#edit-predefined-langcode'
+    body: '<p>Alegeți o limbă din listă, sau alegeți "Limbă personalizată ..." de la sfârșitul listei.</p><p>Faceți clic pe butonul "Adaugă o limbă", atunci când ați terminat alegerea limbii.</p><p>Când adăugați o limbă personalizată, veți primi un formular suplimentar în care se pot furniza: numele, codul și direcția limbii.</p>'
+  language-add-continue:
+    id: language-add-continue
+    plugin: text
+    label: 'Continuarea pe'
+    weight: 3
+    body: '<p>Acum, că aveți o privire de ansamblu asupra caracteristicii "Adaugă limbi", puteți continua cu:<ul><li>Adăugarea unei limbi</li><li>Adăugarea unei limbi personalizate</li><li><a href="[site:url]admin/config/regional/language">Vizualizarea limbilor configurate</a></li></ul></p>'

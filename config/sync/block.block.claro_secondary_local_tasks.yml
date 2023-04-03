@@ -1,0 +1,22 @@
+uuid: 82293f07-5d89-452c-9161-003f5e9967c0
+langcode: ro
+status: true
+dependencies:
+  theme:
+    - claro
+_core:
+  default_config_hash: 2L0geP-ixCbCkEpW6BVF6H7vDUZN4ea07_Y9CociQm4
+id: claro_secondary_local_tasks
+theme: claro
+region: pre_content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Taburi secundare'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

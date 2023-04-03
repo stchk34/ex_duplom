@@ -1,0 +1,30 @@
+uuid: fa502d53-3fc7-474b-91d4-ea02ed9afca0
+langcode: ro
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:1db79504-2311-45e2-9efd-e44b6f99bd1e'
+  module:
+    - block_content
+    - system
+  theme:
+    - moldova
+id: viewgaleriefoto
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:1db79504-2311-45e2-9efd-e44b6f99bd1e'
+settings:
+  id: 'block_content:1db79504-2311-45e2-9efd-e44b6f99bd1e'
+  label: 'Foto galerie '
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/foto-halereya\r\n/photo-gallery\r\n/galerie-foto"

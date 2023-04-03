@@ -1,0 +1,26 @@
+uuid: ea6dc0e6-99a1-4232-bb4e-d491c7d35886
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: galerie_photo_gueue
+label: 'Galerie foto gueue'
+handler: multiple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      photo_gallery: photo_gallery
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

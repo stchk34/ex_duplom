@@ -1,0 +1,8 @@
+uuid: 4e0f5248-7701-469b-8b6c-909e5aa4dac7
+langcode: en
+status: true
+dependencies: {  }
+id: polls_block
+label: 'Polls block'
+revision: 0
+description: ''

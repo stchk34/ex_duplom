@@ -1,0 +1,10 @@
+uuid: f17921fe-e44f-4778-8f41-96a7012bdc04
+langcode: ro
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'Navigare principală'
+description: 'Legături către secțiuni sit'
+locked: true

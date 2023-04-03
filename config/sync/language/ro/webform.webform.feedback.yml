@@ -1,0 +1,40 @@
+elements: |
+  cimpurile_marcate_cu_sunt_obligatorii_:
+    '#title': 'Câmpurile marcate cu * sunt obligatorii.'
+  nume_and_prenume:
+    '#title': 'Nume and prenume'
+    '#first__title': Nume
+    '#last__title': Prenume
+    '#middle__title': Mijloc
+    '#suffix__title': Sufix
+    '#degree__title': Grad
+  email:
+    '#required_error': 'Email este obligatoriu.'
+  telefon:
+    '#title': Telefon
+  denumirea_instituei:
+    '#title': 'Numele instituției'
+    '#required_error': 'Numele instituției este obligatoriu.'
+  scopul_vizitei:
+    '#title': 'Subiectul vizitei'
+    '#options':
+      COVID-19: 'Măsuri preventive împotriva răspândirii COVID-19'
+      'The new president': 'Noul presedinte'
+      'Work in the parliament': 'Lucru în parlament'
+    '#required_error': 'Subiectul vizitei este obligatoriu.'
+  alege_data:
+    '#title': 'Alegeți data'
+    '#required_error': 'Data este obligatorie.'
+  scopul_viziteii:
+    '#title': 'Scopul vizitei'
+    '#required_error': 'Scopul vizitei este obligatoriu.'
+  actions:
+    '#title': 'butoanele de trimitere'
+    '#submit__label': Trimite
+title: 'Programează o vizită'
+settings:
+  confirmation_message: 'Formularul dvs. a fost trimis.'
+handlers:
+  email:
+    settings:
+      body: "Vizitatorul a programat o vizităю<br />\r\n[webform_submission:values]"

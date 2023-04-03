@@ -1,0 +1,16 @@
+uuid: cd50655f-1ef7-4016-9c6b-55150302435c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+    - taxonomy.vocabulary.noutati
+id: home_page_menu
+label: 'Home page menu'
+vocabulary: noutati
+menu: account
+expanded: false
+depth: 0
+menu_parent: 'admin:admin_toolbar_tools.extra_links:node.add.page'
+description_field_name: null
+use_term_weight_order: true

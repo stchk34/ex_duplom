@@ -1,0 +1,18 @@
+uuid: 02f5f1f1-10e8-499d-b191-37e021f086ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.galerie_photo_gueue
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.galerie_photo_gueue
+target_entity_type_id: entity_subqueue
+target_bundle: galerie_photo_gueue
+default_langcode: site_default
+language_alterable: true

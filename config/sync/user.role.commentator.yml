@@ -1,0 +1,12 @@
+uuid: 24652093-3722-48a7-9ceb-a251486a1e53
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: commentator
+label: Commentator
+weight: -8
+is_admin: null
+permissions:
+  - 'skip comment approval'

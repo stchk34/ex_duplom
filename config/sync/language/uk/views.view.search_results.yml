@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      title: 'Результати пошуку'
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Пошук
+      empty:
+        area:
+          content:
+            value: "<p>Немає результатів пошуку за вашим запитом.</p>\r\n"
+            format: basic_html
+  page_1:
+    display_title: Сторінка

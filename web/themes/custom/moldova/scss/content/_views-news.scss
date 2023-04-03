@@ -1,0 +1,208 @@
+// View with all news.
+.views-field-comment-count {
+  display: inline-block;
+  margin-left: 3%;
+  font-size: 14px;
+  color: #b9b9b9;
+
+  &::before {
+    font-family: 'FontAwesome', serif;
+    content: '\f075';
+    margin-right: 5px;
+  }
+}
+
+.block-views-blocknews-block-1 {
+  .views-row {
+    padding: 40px 0;
+    border-bottom: 0.1rem solid #f0f0f0;
+    min-height: 300px;
+
+    &:first-child {
+      padding: 0 0 40px;
+      min-height: 250px;
+    }
+
+    .views-field-title {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.35;
+
+      &:first-child {
+        text-transform: uppercase;
+      }
+
+      a {
+        color: $blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .views-field-field-data-publish {
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+      color: #b9b9b9;
+
+      &::before {
+        font-family: 'Font Awesome 5 Free', serif;
+        font-weight: 500;
+        content: '\f133';
+        margin-right: 8px;
+      }
+    }
+
+    .views-field-totalcount {
+      font-size: 14px;
+      color: #b9b9b9;
+      margin-right: 0;
+      display: inline-block;
+      margin-left: 3%;
+
+      &::before {
+        font-family: 'Font Awesome 5 Free', serif;
+        content: '\f06e';
+        font-weight: 900;
+        margin-right: 5px;
+      }
+    }
+
+    .views-field-field-media-image {
+      float: left;
+
+      img {
+        height: 12vw;
+        width: 18vw;
+        margin: 0 20px 50px 0;
+      }
+    }
+
+    .views-field-field-link {
+      a {
+        position: relative;
+        margin-top: 2rem;
+        padding-right: 3rem;
+        color: #023ca7;
+        font-size: 14px;
+        font-weight: 700;
+
+        &:after {
+          position: absolute;
+          top: 5px;
+          content: '\f054';
+          font-family: 'Font Awesome 5 Free', serif;
+          font-weight: 900;
+          margin-left: 15px;
+          font-size: 12px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .views-field-body {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .block-views-blocknews-block-1 {
+    .views-row {
+      .views-field-field-media-image {
+        float: none;
+
+        img {
+          height: 29vw;
+          width: 48vw;
+          margin: 0 0 10px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .block-views-blocknews-block-1 {
+    .views-row {
+      padding: 27px 0 40px;
+      text-align: center;
+
+      .views-field-body, .views-field-field-link {
+        display: none;
+      }
+
+      .views-field-title {
+        font-size: 16px;
+      }
+
+      .views-field-field-media-image {
+        img {
+          width: 42vw;
+          height: 30vw;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .block-views-blocknews-block-1 {
+    .views-row {
+      padding: 20px 0;
+      display: flex;
+      border-bottom: 0.1rem solid #f0f0f0;
+      flex-direction: column;
+      align-items: center;
+
+      .views-field-body, .views-field-field-link {
+        display: none;
+      }
+
+      .views-field-title {
+        margin: 10px 0;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.35;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      .views-field-field-media-image {
+        float: none;
+        margin: 0 0 40px 0;
+        height: 29vw;
+
+        img {
+          width: 62vw;
+          height: 35vw;
+          margin: 0;
+
+          .views-field-field-media-image {
+            float: none;
+            margin: 0 0 40px 0;
+            height: 29vw;
+
+            img {
+              width: 63vw;
+              height: 40vw;
+              margin: 0;
+            }
+          }
+
+          .views-field-comment-count, .views-field-totalcount, .views-field-field-data-publish {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

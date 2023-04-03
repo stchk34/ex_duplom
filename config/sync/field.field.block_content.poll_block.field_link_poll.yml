@@ -1,0 +1,23 @@
+uuid: 40ea97ff-c5d8-4593-bbbc-0acf2f074c95
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.poll_block
+    - field.storage.block_content.field_link_poll
+  module:
+    - link
+id: block_content.poll_block.field_link_poll
+field_name: field_link_poll
+entity_type: block_content
+bundle: poll_block
+label: 'Link poll'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

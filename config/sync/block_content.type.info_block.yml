@@ -1,0 +1,8 @@
+uuid: a7890b27-605d-4364-bef2-86dd1b426d2a
+langcode: en
+status: true
+dependencies: {  }
+id: info_block
+label: 'Useful section'
+revision: 0
+description: ''

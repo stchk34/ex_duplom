@@ -1,0 +1,20 @@
+uuid: c832f6b7-9204-45c7-9eaa-e0ca156a2799
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.news_queue_
+id: entity_subqueue.news_queue_.uid
+field_name: uid
+entity_type: entity_subqueue
+bundle: news_queue_
+label: 'User ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\entityqueue\Entity\EntitySubqueue::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

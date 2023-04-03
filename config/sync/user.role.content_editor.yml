@@ -1,0 +1,83 @@
+uuid: 56a3491e-cd77-4a2f-b6d9-c3334210ed8e
+langcode: ro
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.contacts
+    - node.type.faq
+    - node.type.form
+    - node.type.news
+    - node.type.page
+    - node.type.photo_gallery
+    - node.type.reports
+    - node.type.useful_tools
+    - node.type.video_gallery
+    - taxonomy.vocabulary.tags
+    - workflows.workflow.editorial
+  module:
+    - comment
+    - content_moderation
+    - contextual
+    - file
+    - node
+    - path
+    - statistics
+    - system
+    - taxonomy
+    - toolbar
+    - total_control
+    - tour
+    - webform
+    - workflows
+_core:
+  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
+id: content_editor
+label: 'Редактор вмісту'
+weight: -7
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer url aliases'
+  - 'administer workflows'
+  - 'create article content'
+  - 'create contacts content'
+  - 'create faq content'
+  - 'create form content'
+  - 'create news content'
+  - 'create page content'
+  - 'create photo_gallery content'
+  - 'create reports content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'create useful_tools content'
+  - 'create video_gallery content'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit any webform'
+  - 'edit any webform submission'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own contacts content'
+  - 'edit own faq content'
+  - 'edit own form content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own reports content'
+  - 'edit own useful_tools content'
+  - 'edit own video_gallery content'
+  - 'edit terms in tags'
+  - 'have total control'
+  - 'revert all revisions'
+  - 'use editorial transition create_new_draft'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view post access counter'
+  - 'view the administration theme'

@@ -1,0 +1,211 @@
+// Right blocks with poll.
+.block-views-blockpoll-right-block-block-1 {
+  .view-poll-right-block {
+    .views-row {
+      width: 83%;
+      float: right;
+      margin-bottom: 40px;
+      padding: 30px 40px;
+      position: relative;
+      border: solid 0.1rem #e5e5e5;
+      background-color: #f5f5f5;
+
+      &:hover {
+        .views-row {
+          box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.10);
+        }
+      }
+
+      // Poll.
+      .poll-view {
+        &-form {
+          width: 100%;
+          margin: 0;
+        }
+      }
+
+      .poll {
+        &-question {
+          font-size: 15px;
+          line-height: 21px;
+          margin: 20px 0;
+          font-weight: 300;
+          color: #000;
+          font-family: "Open Sans", sans-serif;
+        }
+
+        .js-form-submit {
+          padding: 10px;
+          margin-bottom: 5px;
+        }
+
+        .choice-result {
+          .bar {
+            border-radius: 5px;
+            width: 65%;
+            height: 25px;
+            margin-bottom: 25px;
+          }
+        }
+
+        .vote-form {
+          margin-bottom: 20px;
+
+          .fieldset-wrapper {
+            #edit-choice {
+              display: flex;
+            }
+
+            .js-form-item {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+
+      .field--name-field-link-poll a {
+        position: relative;
+        display: inline-block;
+        padding-right: 5px;
+        color: #023ca7;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top:10px;
+
+        &:after {
+          position: absolute;
+          top: 5px;
+          content: '\f054';
+          font-family: 'Font Awesome 5 Free', serif;
+          font-weight: 900;
+          margin-left: 8px;
+          font-size: 12px;
+          text-decoration: none;
+        }
+      }
+
+      .field--name-field-title-block-sondaj {
+        margin: 0;
+        text-transform: uppercase;
+        font-family: "Trajan Pro Regular", sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 1.25;
+        color: black;
+      }
+
+      .field--name-body {
+        margin: 0 0 15px;
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .block-views-blockpoll-right-block-block-1 .view-poll-right-block .views-row {
+    padding: 30px 20px;
+  }
+  .poll{
+    .choice-result {
+      .bar {
+        width: 60%;
+      }
+    }
+    .percent {
+      margin-left: 9px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .block-views-blockpoll-right-block-block-1 {
+    .view-poll-right-block {
+      .views-row {
+        padding: 15px;
+
+        .field--name-body {
+          margin: 11px 0 15px;
+          font-size: 13px;
+        }
+
+        .field--name-field-title-block-sondaj {
+          font-size: 10px;
+
+          .field--name-field-link-poll {
+            a {
+              font-size: 12px;
+
+              &:after {
+                top: 3px;
+                margin-left: 5px;
+                font-size: 11px;
+              }
+            }
+          }
+
+          .poll {
+            .js-form-submit {
+              padding: 10px;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+      input[data-drupal-selector="edit-cancel"] {
+        padding:10px;
+        font-size:9px;
+        margin-top:10px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .block-views-blockpoll-right-block-block-1 {
+    .view-poll-right-block {
+      .view-content {
+        display: flex;
+        justify-content: space-between;
+
+        .views-row {
+          width: 45%;
+
+          .field--name-field-title-block-sondaj {
+            font-size: 18px;
+          }
+
+          .field--name-body {
+            margin: 11px 0 15px;
+            font-size: 15px;
+          }
+
+          .field--name-field-link-poll {
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .block-views-blockpoll-right-block-block-1 {
+    .view-poll-right-block {
+      .view-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .views-row {
+          width: 100%;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+

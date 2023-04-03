@@ -1,0 +1,20 @@
+uuid: ced4cf8b-4b08-4d7f-91b5-4e4a23dd7095
+langcode: ro
+status: true
+dependencies:
+  theme:
+    - claro
+_core:
+  default_config_hash: fNwDdW063tk_ktzSWzZVeQS9wzvLooVO280BQ9WrsIs
+id: claro_page_title
+theme: claro
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titlul paginii'
+  label_display: '0'
+  provider: core
+visibility: {  }

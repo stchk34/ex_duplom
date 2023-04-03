@@ -1,0 +1,8 @@
+uuid: 78376c50-0d80-4326-8f12-6c04e73b53b3
+langcode: en
+status: true
+dependencies: {  }
+id: information_block
+label: 'Information block'
+revision: 0
+description: ''

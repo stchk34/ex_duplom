@@ -1,0 +1,33 @@
+uuid: 630c35b6-6fb8-422e-bbe5-32234f0eae79
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:c42959f0-a9f1-4b9a-8c9c-7ab02a88b27e'
+  module:
+    - block_content
+    - node
+  theme:
+    - moldova
+id: contacte
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:c42959f0-a9f1-4b9a-8c9c-7ab02a88b27e'
+settings:
+  id: 'block_content:c42959f0-a9f1-4b9a-8c9c-7ab02a88b27e'
+  label: Contacts
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      contacts: contacts

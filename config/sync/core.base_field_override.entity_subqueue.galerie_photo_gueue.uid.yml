@@ -1,0 +1,20 @@
+uuid: 1579a132-0bfc-419f-a30d-4455670067f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.galerie_photo_gueue
+id: entity_subqueue.galerie_photo_gueue.uid
+field_name: uid
+entity_type: entity_subqueue
+bundle: galerie_photo_gueue
+label: 'User ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\entityqueue\Entity\EntitySubqueue::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

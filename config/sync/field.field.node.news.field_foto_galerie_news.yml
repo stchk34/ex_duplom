@@ -1,0 +1,29 @@
+uuid: aabb16a4-3d95-465d-a856-25529a40ff4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foto_galerie_news
+    - media.type.image
+    - node.type.news
+id: node.news.field_foto_galerie_news
+field_name: field_foto_galerie_news
+entity_type: node
+bundle: news
+label: 'Photo galerry'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

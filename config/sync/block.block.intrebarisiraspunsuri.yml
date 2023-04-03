@@ -1,0 +1,33 @@
+uuid: 076178fd-e3df-4822-8e0f-600a92660238
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:b914481c-02ed-48ef-9215-9abdfa15f1d3'
+  module:
+    - block_content
+    - node
+  theme:
+    - moldova
+id: intrebarisiraspunsuri
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:b914481c-02ed-48ef-9215-9abdfa15f1d3'
+settings:
+  id: 'block_content:b914481c-02ed-48ef-9215-9abdfa15f1d3'
+  label: 'Questions and answers'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      faq: faq

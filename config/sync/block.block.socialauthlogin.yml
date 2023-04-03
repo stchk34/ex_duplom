@@ -1,0 +1,28 @@
+uuid: ce076f6d-87af-47a4-aae8-c15f954258c7
+langcode: ro
+status: false
+dependencies:
+  module:
+    - social_auth
+    - user
+  theme:
+    - moldova
+id: socialauthlogin
+theme: moldova
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: 'Social Auth Login'
+  label_display: '0'
+  provider: social_auth
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

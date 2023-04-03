@@ -1,0 +1,227 @@
+.block-block-content8d152378-20bb-4692-b8eb-8da62342b24f {
+  margin-top: 70px;
+  width: 100%;
+  border-top: 1px solid $grey_border;
+  border-bottom: 1px solid $grey_border;
+  position: relative;
+
+  .content {
+    max-width: 1830px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .field--name-field-title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: start;
+    margin-left: 70px;
+    margin-bottom: 0;
+    font-family: 'Trajan Pro Bold', serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $black_text;
+  }
+
+  .field--name-body {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: 20px;
+    margin-left: 70px;
+    color: $black_text;
+
+    p {
+      margin-right: 10px;
+      font-family: 'Open Sans', serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
+
+  .field--name-field-poll-link {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-top: 20px;
+    margin-left: 70px;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: $blue;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &::after {
+        content: '\f054';
+        font-family: 'Font Awesome 5 Free', serif;
+        font-weight: 900;
+        margin-left: 30px;
+        font-size: 12px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .field--name-field-background-image {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: auto;
+      bottom: 0;
+      width: 500px;
+      content: ' ';
+      background: linear-gradient(to right, #fff 0, rgba(255, 255, 255, .85) 40%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    img {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 400px;
+      object-fit: cover;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .block-block-content8d152378-20bb-4692-b8eb-8da62342b24f {
+    .field--name-field-title {
+      margin-left: 20px;
+      font-size: 20px;
+    }
+
+    .field--name-body {
+      margin-left: 20px;
+    }
+
+    .field--name-field-poll-link {
+      margin-left: 20px;
+
+      a {
+        font-size: 14px;
+
+        &::after {
+          left: 175px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .block-block-content8d152378-20bb-4692-b8eb-8da62342b24f {
+    .field--name-field-title {
+      font-family: 'Trajan Pro Regular', serif;
+      font-size: 20px;
+      margin: 0 0 0 20px;
+    }
+
+    .field--name-body {
+      grid-row-start: 3;
+      grid-row-end: 5;
+      margin-top: 15px;
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .field--name-field-poll-link {
+      grid-row-start: 5;
+      grid-row-end: 6;
+
+      a {
+        font-size: 14px;
+
+        &::after {
+          top: 4px;
+          left: 170px;
+        }
+      }
+    }
+
+    .field--name-field-background-image {
+      grid-row-start: 1;
+      grid-row-end: 7;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .block-block-content8d152378-20bb-4692-b8eb-8da62342b24f {
+    padding-top: 40px;
+
+    .field--name-field-background-image {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 7;
+      min-height: 200px;
+
+      img {
+        min-height: 200px;
+        height: 200px;
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 80%;
+        width: 100%;
+        content: ' ';
+        background: linear-gradient(to bottom, #fff 0, rgba(255, 255, 255, .85) 40%, rgba(255, 255, 255, 0) 100%);
+      }
+    }
+
+    .field--name-field-title {
+      font-size: 18px;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    .field--name-body {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .field--name-field-poll-link {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      padding: 10px 0 45px;
+    }
+  }
+}

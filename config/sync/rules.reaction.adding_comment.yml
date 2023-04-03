@@ -1,0 +1,51 @@
+uuid: b06bccc6-e953-498c-8470-8d556c6f0f38
+langcode: en
+status: true
+dependencies: {  }
+id: adding_comment
+label: 'Adding comment'
+events:
+  -
+    event_name: 'rules_entity_insert:comment--example'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 986aebbb-0ee7-4d9e-964b-9174ebf28485
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 1885d0f0-296d-450a-b342-a060efe831be
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: c5643685-e1ea-47a0-8aff-aaf29a997293
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 623bfb8c-87ab-45c0-99c4-552d654fb7f8
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - nastia.nadashkevich@gmail.com
+          subject: 'A new comment was added.'
+          message: '{{ @rules.site_context:site.url }}/comment-rewiev'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }

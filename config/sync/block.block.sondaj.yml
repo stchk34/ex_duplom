@@ -1,0 +1,30 @@
+uuid: f479510c-9100-4b56-9d37-98f6839c5039
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:1256c59a-7ab0-4f14-a49e-f304fade1a71'
+  module:
+    - block_content
+    - system
+  theme:
+    - moldova
+id: sondaj
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:1256c59a-7ab0-4f14-a49e-f304fade1a71'
+settings:
+  id: 'block_content:1256c59a-7ab0-4f14-a49e-f304fade1a71'
+  label: Polls
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/poll/*'

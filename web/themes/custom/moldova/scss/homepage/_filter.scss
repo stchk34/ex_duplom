@@ -1,0 +1,204 @@
+// Styles for block with search filters.
+.search_form_filter {
+  margin: 0 10px;
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: underline;
+  white-space: nowrap;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+#search_api_filter_block {
+  position: absolute;
+  top: -10px;
+  right: 5%;
+  display: none;
+  width: 420px;
+  padding: 20px;
+  background: $blue;
+  border: 1px solid $dark_grey;;
+  z-index: 100;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4%;
+  }
+
+  .js-form-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    color: #ffffff;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    label {
+      width: 100%;
+      font-size: 13px;
+    }
+
+    select, input {
+      width: 100%;
+      margin-top: 3px;
+      padding: 5px 10px;
+      background: $blue;
+      color: #ffffff;
+      border: 1px solid $dark_grey;
+      outline: none;
+    }
+  }
+
+  .close_search_form_filter {
+    position: absolute;
+    bottom: 20px;
+    height: 30px;
+    padding: 0 15px;
+    background-color: rgba(255, 255, 255, .07);
+    border: 1px solid #fff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    [data-drupal-selector="edit-submit-search-filter"], [data-drupal-selector="edit-submit-search-filter-2"] {
+      height: 30px;
+      margin-top: 20px;
+      margin-right: 20px;
+      padding: 0 15px;
+      border: 1px solid #ffffff;
+      background: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      color: $blue;
+      cursor: pointer;
+
+      &::before {
+        display: none;
+      }
+
+    }
+
+    [data-drupal-selector="edit-reset"] {
+      height: 30px;
+      margin-top: 20px;
+      padding: 0 15px;
+      background-color: rgba(255, 255, 255, .07);
+      border: 1px solid #fff;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+.form-item-type {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+}
+
+.search_api_filter_block .js-form-item.form-item-search-api-fulltext {
+  width: 100%;
+
+  input {
+    padding: 10px;
+  }
+}
+
+.form-item-created-start-date, .form-item-created-last-date, .form-item-sort-by, .form-item-sort-order {
+  width: 48%;
+}
+
+@include media-breakpoint-down(xl) {
+  .search_form_filter {
+    font-size: 14px;
+    white-space: normal;
+    text-align: left;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .search_form_filter {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #search_api_filter_block {
+    top: 0;
+    width: 264px;
+    z-index: 10000;
+    .close_search_form_filter {
+      height: 25px;
+      padding: 0 7px;
+      font-size: 10px;
+    }
+    .form-actions {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      [data-drupal-selector="edit-submit-search-filter"], [data-drupal-selector="edit-submit-search-filter-2"] {
+        height: 25px;
+        margin-right: 52px;
+        padding: 0 7px;
+        font-size: 10px;
+      }
+
+      [data-drupal-selector="edit-reset"] {
+        height: 25px;
+        padding: 0 7px;
+        font-size: 10px;
+      }
+    }
+    .js-form-item {
+      label {
+        font-size: 12px;
+      }
+      select {
+        font-size: 10px;
+      }
+    }
+  }
+  .search_form_filter {
+    display: block;
+    margin: 15px 0 0 0;
+    padding: 0;
+    height: 20px;
+  }
+  .js .dropbutton-widget .dropbutton {
+    height: 100px;
+  }
+}
+@include media-breakpoint-down(sm) {
+  #search_api_filter_block {
+    right: 0;
+  }
+}

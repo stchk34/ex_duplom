@@ -1,0 +1,18 @@
+label: Контакти
+display:
+  default:
+    display_options:
+      title: Контакти
+      fields:
+        field_adresa:
+          label: Адреса
+        field_telefon:
+          label: Телефон
+        field_fax:
+          label: Факс
+        field_email:
+          label: 'Електронна пошта'
+        field_orar_de_lucru:
+          label: 'Робочі години'
+        field_locatia:
+          label: Розташування

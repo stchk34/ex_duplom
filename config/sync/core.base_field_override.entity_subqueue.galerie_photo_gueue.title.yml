@@ -1,0 +1,18 @@
+uuid: 741b2ab6-2fd3-4d2d-9d3f-a5b6d7a75ead
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.galerie_photo_gueue
+id: entity_subqueue.galerie_photo_gueue.title
+field_name: title
+entity_type: entity_subqueue
+bundle: galerie_photo_gueue
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

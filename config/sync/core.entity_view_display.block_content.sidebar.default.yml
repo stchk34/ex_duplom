@@ -1,0 +1,61 @@
+uuid: 9a45e2f9-2e08-46b5-9636-4eda774ec987
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.sidebar
+    - field.field.block_content.sidebar.body
+    - system.menu.main
+  module:
+    - layout_builder
+    - layout_discovery
+    - menu_block
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          df99af2b-b5a4-49db-8230-f6a57ad8c994:
+            uuid: df99af2b-b5a4-49db-8230-f6a57ad8c994
+            region: content
+            configuration:
+              id: 'menu_block:main'
+              label: 'Main navigation'
+              label_display: '0'
+              provider: menu_block
+              context_mapping: {  }
+              follow: false
+              follow_parent: child
+              label_link: false
+              label_type: block
+              level: 2
+              depth: 0
+              expand_all_items: true
+              parent: 'main:'
+              render_parent: true
+              suggestion: main
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.sidebar.default
+targetEntityType: block_content
+bundle: sidebar
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

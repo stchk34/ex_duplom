@@ -1,0 +1,354 @@
+uuid: cdce82b7-2284-4617-aa0e-9abc61e6a833
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.example.default
+    - field.field.node.video_gallery.field_comment_example
+    - field.field.node.video_gallery.field_date
+    - field.field.node.video_gallery.field_media_video
+    - node.type.video_gallery
+    - views.view.information_block
+    - views.view.news_counter
+    - views.view.useful_section
+  content:
+    - 'block_content:notifications_comment:254cb8be-e4ef-496f-b721-417578305497'
+    - 'block_content:sidebar:823d784b-5a52-4ce5-a9e0-73d01b467bc8'
+  module:
+    - block_content
+    - comment
+    - layout_builder
+    - layout_discovery
+    - slick
+    - social_auth
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          d1adb087-a1f3-4755-98f5-24aaebed1684:
+            uuid: d1adb087-a1f3-4755-98f5-24aaebed1684
+            region: third
+            configuration:
+              id: 'views_block:useful_section-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          5d5a7d65-0b3c-4edd-80a5-2aa2904e1113:
+            uuid: 5d5a7d65-0b3c-4edd-80a5-2aa2904e1113
+            region: first
+            configuration:
+              id: 'block_content:823d784b-5a52-4ce5-a9e0-73d01b467bc8'
+              label: Sidebar
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 2
+            additional: {  }
+          6b80d97e-ecf1-4065-8c88-9e67d0d06435:
+            uuid: 6b80d97e-ecf1-4065-8c88-9e67d0d06435
+            region: second
+            configuration:
+              id: 'extra_field_block:node:video_gallery:content_moderation_control'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 11
+            additional: {  }
+          9acbb65b-60e2-4cfa-bb3e-6547783e3df8:
+            uuid: 9acbb65b-60e2-4cfa-bb3e-6547783e3df8
+            region: second
+            configuration:
+              id: 'field_block:node:video_gallery:field_media_video'
+              label: 'Toata galeria'
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: blazy_media
+                label: hidden
+                settings:
+                  image: ''
+                  view_mode: default
+                  style: ''
+                  background: false
+                  box_caption: ''
+                  box_caption_custom: ''
+                  box_media_style: ''
+                  loading: ''
+                  preload: false
+                  responsive_image_style: ''
+                  box_style: ''
+                  image_style: max_325x325
+                  media_switch: photoswipe
+                  ratio: ''
+                  thumbnail_style: ''
+                  grid: ''
+                  grid_medium: ''
+                  grid_small: ''
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          5ba0d1c5-d2ad-4f28-ab8b-6a24b3475da4:
+            uuid: 5ba0d1c5-d2ad-4f28-ab8b-6a24b3475da4
+            region: second
+            configuration:
+              id: 'field_block:node:video_gallery:field_comment_example'
+              label: Comments
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: comment_default
+                label: hidden
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            weight: 12
+            additional: {  }
+          248643b1-97de-4421-b1c4-34983dfcf249:
+            uuid: 248643b1-97de-4421-b1c4-34983dfcf249
+            region: second
+            configuration:
+              id: social_auth_login
+              label: 'Social Auth Login'
+              label_display: '0'
+              provider: social_auth
+              context_mapping: {  }
+            weight: 13
+            additional: {  }
+          342f49bf-9f26-4ffc-9999-416e8d1a98ab:
+            uuid: 342f49bf-9f26-4ffc-9999-416e8d1a98ab
+            region: second
+            configuration:
+              id: 'field_block:node:video_gallery:field_media_video'
+              label: 'Toata galeria'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: slick_media
+                label: hidden
+                settings:
+                  optionset: media_slider
+                  class: ''
+                  image: ''
+                  link: ''
+                  title: ''
+                  vanilla: false
+                  layout: ''
+                  view_mode: default
+                  cache: 0
+                  skin: ''
+                  style: ''
+                  background: false
+                  box_caption: ''
+                  box_caption_custom: ''
+                  box_media_style: ''
+                  loading: ''
+                  preload: false
+                  responsive_image_style: ''
+                  box_style: ''
+                  image_style: ''
+                  media_switch: photoswipe
+                  ratio: ''
+                  thumbnail_style: ''
+                  grid: ''
+                  grid_medium: ''
+                  grid_small: ''
+                  overridables:
+                    arrows: '0'
+                    autoplay: '0'
+                    dots: '0'
+                    draggable: '0'
+                    infinite: '0'
+                    mouseWheel: '0'
+                    randomize: '0'
+                    variableWidth: '0'
+                  optionset_thumbnail: ''
+                  skin_thumbnail: ''
+                  thumbnail_effect: ''
+                  thumbnail_position: ''
+                  override: false
+                  use_theme_field: false
+                  preserve_keys: false
+                  visible_items: null
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          ae3652ba-a5e6-4b6b-96c9-c2263b6b6834:
+            uuid: ae3652ba-a5e6-4b6b-96c9-c2263b6b6834
+            region: second
+            configuration:
+              id: 'field_block:node:video_gallery:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          a7000c94-ce91-491c-9e85-c0de2f996be8:
+            uuid: a7000c94-ce91-491c-9e85-c0de2f996be8
+            region: second
+            configuration:
+              id: 'block_content:254cb8be-e4ef-496f-b721-417578305497'
+              label: 'Alert comment(ro)'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 10
+            additional: {  }
+          279294eb-d6e8-4e8a-a61b-5e74fe69d73e:
+            uuid: 279294eb-d6e8-4e8a-a61b-5e74fe69d73e
+            region: second
+            configuration:
+              id: 'views_block:news_counter-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 9
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          2ba21ab7-3370-4f37-ad0e-e1e31f2c9251:
+            uuid: 2ba21ab7-3370-4f37-ad0e-e1e31f2c9251
+            region: content
+            configuration:
+              id: 'views_block:information_block-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.video_gallery.default
+targetEntityType: node
+bundle: video_gallery
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: second
+  field_comment_example:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_media_video:
+    type: slick_media
+    label: hidden
+    settings:
+      caption: {  }
+      optionset: media_slider
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: true
+      layout: ''
+      view_mode: default
+      cache: 0
+      skin: ''
+      lazy: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      preload: false
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+      use_theme_field: false
+      preserve_keys: false
+      visible_items: null
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_date: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

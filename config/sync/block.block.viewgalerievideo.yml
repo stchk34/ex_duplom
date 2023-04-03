@@ -1,0 +1,30 @@
+uuid: 223da854-2915-492b-9d19-ec66cb850079
+langcode: ro
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:0ec7e99b-ba12-4a00-9260-76ba5ed27db2'
+  module:
+    - block_content
+    - system
+  theme:
+    - moldova
+id: viewgalerievideo
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:0ec7e99b-ba12-4a00-9260-76ba5ed27db2'
+settings:
+  id: 'block_content:0ec7e99b-ba12-4a00-9260-76ba5ed27db2'
+  label: 'Video galerie'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/galerie-video\r\n/video-gallery\r\n/video-halereya"

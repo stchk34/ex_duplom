@@ -1,0 +1,29 @@
+uuid: eaa01bb2-def8-484a-b0c0-3ec212ccc92e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.information_block
+    - field.storage.block_content.field_taxonomy_information_block
+    - taxonomy.vocabulary.position_information_blocks
+id: block_content.information_block.field_taxonomy_information_block
+field_name: field_taxonomy_information_block
+entity_type: block_content
+bundle: information_block
+label: 'Taxonomy information block'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      position_information_blocks: position_information_blocks
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

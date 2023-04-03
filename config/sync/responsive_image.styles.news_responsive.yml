@@ -1,0 +1,11 @@
+uuid: 001c7c8c-0408-4665-a96d-5c6aa8c69e72
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.thumbnail
+id: news_responsive
+label: 'News responsive'
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: thumbnail

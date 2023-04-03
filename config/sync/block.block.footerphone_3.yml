@@ -1,0 +1,25 @@
+uuid: 66758e1d-807a-42f1-9c79-b4ed870a1696
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e46d688f-197f-493f-91a3-c48f188f73ad'
+  module:
+    - block_content
+  theme:
+    - moldova
+id: footerphone_3
+theme: moldova
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:e46d688f-197f-493f-91a3-c48f188f73ad'
+settings:
+  id: 'block_content:e46d688f-197f-493f-91a3-c48f188f73ad'
+  label: 'Footer phone '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

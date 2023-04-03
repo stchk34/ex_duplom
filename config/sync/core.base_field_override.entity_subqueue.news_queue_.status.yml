@@ -1,0 +1,22 @@
+uuid: 0620952d-d1d5-49e1-9c5f-1bda8016d6dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.news_queue_
+id: entity_subqueue.news_queue_.status
+field_name: status
+entity_type: entity_subqueue
+bundle: news_queue_
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,13 @@
+uuid: 7c49786a-fa8e-4647-859b-e994afbe4bba
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: LhdsoZPL_pFas2fjaAWue4zvrQ_tEVofLYtcNec-JGM
+id: node_save_action
+label: 'Salvare conţinut'
+type: node
+plugin: 'entity:save_action:node'
+configuration: {  }

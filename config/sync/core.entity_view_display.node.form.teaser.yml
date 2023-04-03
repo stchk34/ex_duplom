@@ -1,0 +1,37 @@
+uuid: 377ff25d-ee23-4cbc-bc12-7f17a0c7d245
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.form.body
+    - field.field.node.form.field_webform
+    - field.field.node.form.layout_builder__layout
+    - node.type.form
+  module:
+    - text
+    - user
+id: node.form.teaser
+targetEntityType: node
+bundle: form
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+hidden:
+  field_webform: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

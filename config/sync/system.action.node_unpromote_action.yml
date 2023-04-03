@@ -1,0 +1,13 @@
+uuid: 0b5cba3b-7b52-408d-8cdf-ce81a2e2e9e5
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: JBptjnfuOMtsdKygklXxoOgeOCTMtQxlkymjnnj-cC0
+id: node_unpromote_action
+label: 'Elimină conținutul de pe pagina principală'
+type: node
+plugin: node_unpromote_action
+configuration: {  }

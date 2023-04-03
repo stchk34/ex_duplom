@@ -1,0 +1,69 @@
+uuid: 5ff2d84d-395d-4773-a6c8-2f6c7c243a18
+langcode: ro
+status: true
+dependencies:
+  module:
+    - locale
+_core:
+  default_config_hash: Kcx1PIw-KgGbTo5_tOkbI6TWJiP_0Sr7t5T9SuMV2hA
+id: locale
+label: Traducere
+module: locale
+routes:
+  -
+    route_name: locale.translate_page
+tips:
+  locale-overview:
+    id: locale-overview
+    plugin: text
+    label: 'Traducerea interfeței utilizatorului'
+    weight: 1
+    body: 'Această pagină vă permite să traduceți interfața de utilizator sau să editați traduceri existente. Dacă inițial ați instalat site-ul în limba engleză, în scopul de a utiliza această pagină, mai întâi trebuie să adăugați altă limbă pe <a href="[site:url]admin/config/regional/language">pagina de limbi</a>.'
+  locale-language:
+    id: locale-language
+    plugin: text
+    label: 'Limba de traducere'
+    weight: 2
+    selector: '#edit-langcode'
+    body: 'Alegeți limba în care doriți să traduceți.'
+  locale-search:
+    id: locale-search
+    plugin: text
+    label: Căutare
+    weight: 3
+    selector: '#edit-string'
+    body: 'Introduceți cuvântul sau propoziția pe care doriți să o traduceți, puteți scrie, de asemenea, doar o parte dintr-un cuvânt.'
+  locale-filter:
+    id: locale-filter
+    plugin: text
+    label: 'Filtrează căutarea'
+    weight: 4
+    selector: '#edit-translation'
+    body: 'Puteți căuta după șiruri netraduse dacă doriți să traduceți ceva care nu este tradus încă. Dacă doriți să modificați o traducere existentă, s-ar putea să doriți să căutați doar după siruri traduse.'
+  locale-submit:
+    id: locale-submit
+    plugin: text
+    label: 'Aplicați criteriile dumneavoastră de căutare'
+    weight: 5
+    selector: '#edit-submit'
+    body: 'Pentru a aplica criteriile de căutare, faceți clic pe butonul <em>Filtru</em>.'
+  locale-translate:
+    id: locale-translate
+    plugin: text
+    label: Traduce
+    weight: 6
+    selector: .js-form-type-textarea
+    body: 'Puteți scrie propria dumneavoastră traducere în câmpurile text ale coloanei din dreapta. Încercați să vă dați seama în ce context va fi utilizat textul în scopul de a fi tradus în mod adecvat.'
+  locale-validate:
+    id: locale-validate
+    plugin: text
+    label: 'Validați traducerea'
+    weight: 7
+    selector: '#edit-submit--2'
+    body: 'După ce ați terminat traducerile, faceți clic pe butonul <em>Salvează traducerile</em>. Trebuie să salvați traducerile de fiecare dată înainte de a schimba pagina sau de a face o căutare nouă.'
+  locale-continue:
+    id: locale-continue
+    plugin: text
+    label: 'Continuarea pe'
+    weight: 8
+    body: 'Traducerile pe care le-ați făcut aici vor fi folosite pe interfața de utilizator a site-ului dumneavoastră. Dacă doriți să le utilizați pe alt site sau să le editați pe un editor de traducere extern, puteți <a href="[site:url]admin/config/regional/translate/export">să le exportați</a> într-un fișier cu extensia .po și <a href="[site:url]admin/config/regional/translate/import">să le importați</a> ulterior.'

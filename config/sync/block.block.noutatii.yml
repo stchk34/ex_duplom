@@ -1,0 +1,30 @@
+uuid: 92ce90c2-8005-45e0-8e80-41ef9659a01c
+langcode: ro
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:61790e3c-3a23-411c-83e5-9a7cef7e5c2a'
+  module:
+    - block_content
+    - system
+  theme:
+    - moldova
+id: noutatii
+theme: moldova
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:61790e3c-3a23-411c-83e5-9a7cef7e5c2a'
+settings:
+  id: 'block_content:61790e3c-3a23-411c-83e5-9a7cef7e5c2a'
+  label: Noutati
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/noutati\r\n/news-list\r\n/novyny"

@@ -1,0 +1,8 @@
+uuid: 2ac06056-a2c6-460d-9af8-43d30cc69eb3
+langcode: en
+status: true
+dependencies: {  }
+id: example
+label: Comments
+target_entity_type_id: node
+description: ''

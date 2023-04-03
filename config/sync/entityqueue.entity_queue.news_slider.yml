@@ -1,0 +1,26 @@
+uuid: 3423ede6-0c52-4bb4-b1de-c6e84c3f434f
+langcode: ro
+status: true
+dependencies:
+  module:
+    - node
+id: news_slider
+label: 'News Slider'
+handler: multiple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      home_page_news_slider: home_page_news_slider
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

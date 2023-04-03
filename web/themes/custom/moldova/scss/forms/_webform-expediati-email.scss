@@ -1,0 +1,350 @@
+// Modal window.
+.ui-widget.form-expediati-email {
+  border: none;
+
+  .main-logo {
+    margin: 200px auto 0;
+
+    .main-logo-text {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 452px;
+    height: 590px;
+    background-image: url('../images/form/form-bg.png');
+    background-size: 735px 590px;
+    background-position: center center;
+  }
+
+  .ui-dialog-titlebar {
+    padding: 0;
+
+    .ui-dialog-title {
+      color: transparent;
+    }
+  }
+
+  .ui-dialog-titlebar, .ui-dialog-buttonpane {
+    background-color: transparent;
+    border: none;
+  }
+
+  .ui-dialog-buttonpane {
+    margin: 0;
+    padding: 0;
+  }
+
+  .ui-icon-closethick {
+    background-color: white;
+  }
+
+  .ui-dialog-titlebar-close {
+    border: 10px solid white;
+  }
+
+  .block-field-blocknodeformtitle {
+    margin: -20px 0 10px 25px;
+  }
+
+  .webform-button--submit {
+    @include form-btn;
+    background-image: none;
+    width: 200px;
+    font-weight: 700;
+    border: none;
+    width: 200px;
+    height: 42px;
+    font-size: 1rem;
+    margin: 10px 237px 10px 0;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .form-submit::before {
+    display: none;
+  }
+
+  .webform-submission-expediati-e-mail-form {
+    position: absolute;
+    right: 0;
+  }
+
+  .alert-danger, .alert-success {
+    font-size: 15px;
+  }
+}
+
+.webform-submission-form {
+  .alert-danger {
+    display: block !important;
+  }
+}
+
+// Form.
+.webform-submission-expediati-e-mail-form {
+  width: 50%;
+  margin-bottom: 50px;
+  padding: 0 20px;
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    transition: all .3s;
+    color: #222;
+    border: 1px solid #f0f0f0;
+    border-radius: 0.5rem;
+    background: white;
+    font-size: 15px;
+
+    &:hover {
+      border: 1px solid #424141;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid #023CA7;
+    }
+  }
+
+  input {
+    height: 40px;
+  }
+
+  textarea {
+    height: 115px;
+  }
+
+  label {
+    color: #2b2b2b;
+    display: block;
+    margin: 0 0 5px 2px;
+    font-size: 14px;
+    margin-top: 10px;
+
+    &:after {
+      color: black;
+    }
+  }
+
+  .text-count-message {
+    font-size: 14px;
+  }
+
+  .text-count-wrapper.webform-counter-warning {
+    color: inherit;
+  }
+
+  fieldset {
+    border: 0;
+  }
+
+  .webform-button--submit {
+    @include form-btn;
+  }
+}
+
+// Notifications.
+.alert-danger, .alert-success {
+  margin: 0 auto 15px;
+  width: 100%;
+  padding: 5px;
+  font-weight: 600;
+  color: #cd1e2d;
+  border: 1px solid #cd1e2d;
+  background-color: #fae8e9;
+  border-radius: 7px;
+
+  .btn-close {
+    display: none;
+  }
+
+  &::before, hr {
+    display: none;
+  }
+}
+
+.alert-success {
+  text-align: center;
+  width: 97%;
+  padding: 5px;
+  color: #418741;
+  border: 1px solid #418741;
+  background-color: #e2ede2;
+  border-radius: 7px;
+
+  .btn-close {
+    display: none;
+  }
+
+  &::before {
+    display: none;
+  }
+}
+
+.alert-danger {
+  color: $dark_red;
+  border: 1px solid $dark_red;
+  background-color: $alert_bg_red;
+
+  hr {
+    display: none;
+  }
+}
+
+.alert-success {
+  text-align: center;
+  color: $dark_green;
+  border: 1px solid $dark_green;
+  background-color: $alert_bg_green;
+}
+
+.ajax-progress.ajax-progress-throbber {
+  display: none;
+}
+
+@include media-breakpoint-down(lg) {
+  .ui-widget.form-expediati-email {
+    width: 736px !important;
+    height: 490px !important;
+
+    &::before {
+      width: 365px;
+      height: 490px;
+      background-size: 680px 490px;
+      background-position: center center;
+    }
+
+    .main-logo {
+      margin: 150px auto 0;
+
+      img {
+        height: 98px;
+        width: 82px;
+      }
+
+      .main-logo-text {
+        font-size: 13px;
+        max-width: 200px;
+      }
+    }
+
+    .ui-dialog-titlebar {
+      margin-top: -20px;
+    }
+
+    .ui-dialog-titlebar-close {
+      margin-top: 10px;
+    }
+
+    .block-field-blocknodeformtitle {
+      margin: -12px 0 10px 25px;
+    }
+
+    .webform-button--submit {
+      margin: -5px 232px 0 0;
+    }
+
+    .ui-dialog-buttonset {
+      margin: 10px -88px 0 0;
+    }
+
+    div#drupal-modal.ui-front {
+      height: 430px !important;
+    }
+
+    .webform-submission-expediati-e-mail-form {
+      input {
+        height: 30px;
+      }
+
+      textarea {
+        height: 70px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .ui-widget.form-expediati-email {
+    width: 100% !important;
+    height: 670px !important;
+
+    .layout--twocol-section > .layout__region--first,
+    .layout--twocol-section > .layout__region--second {
+      flex: 0 1 100%;
+    }
+
+    &::before {
+      width: 100%;
+      height: 184px;
+      background-size: 100% 500px;
+      background-position: center center;
+    }
+
+    div#drupal-modal.ui-front {
+      height: 600px !important;
+    }
+
+    .main-logo {
+      margin: 0 auto;
+    }
+
+    .block-field-blocknodeformtitle {
+      margin: 55px 0 0;
+      text-align: start;
+      padding-left: 20px;
+    }
+
+    .ui-dialog-titlebar-close {
+      margin-top: 15px;
+      border: none;
+    }
+
+    .webform-button--submit {
+      position: absolute;
+      left: 40px;
+    }
+  }
+  .webform-submission-expediati-e-mail-form {
+    width: 100%;
+    top: 210px;
+  }
+  .ui-dialog .ui-dialog-buttonpane {
+    margin-top: 47px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .ui-widget.form-expediati-email {
+    width: 90% !important;
+
+    .webform-button--submit {
+      margin-top: -20px;
+    }
+
+    div#drupal-modal.ui-front {
+      height: 630px !important;
+    }
+
+    .webform-button--submit {
+      width: 170px;
+      height: 35px;
+    }
+
+    .block-field-blocknodeformtitle {
+      margin-top: 40px;
+    }
+  }
+  .alert-danger, .alert-success {
+    font-size: 13px;
+  }
+}

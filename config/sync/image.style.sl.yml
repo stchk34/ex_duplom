@@ -1,0 +1,15 @@
+uuid: 17590a24-5f3d-4fc9-a4a4-43e34d11d99f
+langcode: en
+status: true
+dependencies: {  }
+name: sl
+label: 'Slider (1100x300)'
+effects:
+  012830cb-187d-4c09-8ab5-65e8879c2bf1:
+    uuid: 012830cb-187d-4c09-8ab5-65e8879c2bf1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1000
+      height: 300
+      anchor: center-center

@@ -1,0 +1,18 @@
+uuid: 378bde72-c740-41a0-b0d9-343768ffe2e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Contacts
+type: contacts
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,163 @@
+uuid: d303647e-fe7f-46dc-9abb-9ef891a4b9b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.form.body
+    - field.field.node.form.field_webform
+    - field.field.node.form.layout_builder__layout
+    - node.type.form
+    - views.view.useful_section
+  content:
+    - 'block_content:sidebar:823d784b-5a52-4ce5-a9e0-73d01b467bc8'
+  module:
+    - block_content
+    - layout_builder
+    - text
+    - user
+    - views
+    - webform
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          099aed2a-c2bc-4463-a592-a9a19d0f2c4d:
+            uuid: 099aed2a-c2bc-4463-a592-a9a19d0f2c4d
+            region: second
+            configuration:
+              id: 'field_block:node:form:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          2d6f878f-bcf0-4701-8b40-49bc3b58b2d6:
+            uuid: 2d6f878f-bcf0-4701-8b40-49bc3b58b2d6
+            region: second
+            configuration:
+              id: 'field_block:node:form:field_webform'
+              label: Webform
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: webform_entity_reference_entity_view
+                label: hidden
+                settings:
+                  source_entity: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          81fec45c-88b2-4078-9eb7-2d82e4d9d322:
+            uuid: 81fec45c-88b2-4078-9eb7-2d82e4d9d322
+            region: third
+            configuration:
+              id: 'views_block:useful_section-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          633a589a-cbd6-4055-be8b-c6ea4de45d61:
+            uuid: 633a589a-cbd6-4055-be8b-c6ea4de45d61
+            region: second
+            configuration:
+              id: 'extra_field_block:node:form:content_moderation_control'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 4
+            additional: {  }
+          4a792d49-618a-48ce-b201-207852306124:
+            uuid: 4a792d49-618a-48ce-b201-207852306124
+            region: second
+            configuration:
+              id: 'field_block:node:form:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          aefdd705-5a5f-4870-8951-4cecc5d89eb8:
+            uuid: aefdd705-5a5f-4870-8951-4cecc5d89eb8
+            region: first
+            configuration:
+              id: 'block_content:823d784b-5a52-4ce5-a9e0-73d01b467bc8'
+              label: Sidebar
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.form.full
+targetEntityType: node
+bundle: form
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: second
+  field_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true
